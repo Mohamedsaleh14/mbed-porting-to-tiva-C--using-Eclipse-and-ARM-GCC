@@ -55,7 +55,7 @@ void empty_def_handler(void);
 // this is the code for an hard fault.
 void hardfault_handler(void);
 //systick handler
-void systick_def_handler(void);
+void TIMERA_handler(void);
 
 //-----------------------------------------------------------------------------
 // 						     Variables declarations
@@ -99,7 +99,7 @@ void(* myvectors[])(void) = {
     empty_def_handler,		// Debug monitor					12
     0,						// Reserved							13
     empty_def_handler,		// PendSV							14
-	systick_def_handler,		// SysTick							15
+	empty_def_handler,		// SysTick							15
     // Peripherial interrupts start here.
 	empty_def_handler,		// GPIO Port A						16
 	empty_def_handler,		// GPIO Port B						17
@@ -120,7 +120,7 @@ void(* myvectors[])(void) = {
 	empty_def_handler,		// ADC 0 Seq 2						32
 	empty_def_handler,		// ADC 0 Seq 3						33
 	empty_def_handler,		// WDT 0 and 1						34
-	systick_def_handler,		// 16/32 bit timer 0 A				35
+	TIMERA_handler,		// 16/32 bit timer 0 A				35
 	empty_def_handler,		// 16/32 bit timer 0 B				36
 	empty_def_handler,		// 16/32 bit timer 1 A				37
 	empty_def_handler,		// 16/32 bit timer 1 B				38
@@ -321,7 +321,7 @@ void empty_def_handler(void){
     }
 }
 
-void systick_def_handler(void)
+void TIMERA_handler(void)
 {
 
 }
