@@ -27,7 +27,7 @@ void us_ticker_init(void)
 	TIMER0->CTL 	  = 0x00;
 	TIMER0->CFG 	  = 0x00;
 	TIMER0->TAMR 	  = TIMERA_PERIODIC_MODE|TIMERA_COUNT_UP;
-	TIMER0->TAILR 	  = 1000; 		// 1 microSecond
+	TIMER0->TAILR 	  = 80; 		// 1 microSecond
 	TIMER0->IMR		  = TIMERA_TIMEOUT_INTERRUPT;
 	TIMER0->CTL		  = TIMERA_ENABLE_BIT|TIMERA_STALL_BIT;
 	NVIC_SetVector(TIMER0A_IRQn, (uint32_t)us_ticker_irq_handler);
