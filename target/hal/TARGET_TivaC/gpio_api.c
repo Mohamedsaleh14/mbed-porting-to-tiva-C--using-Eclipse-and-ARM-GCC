@@ -202,27 +202,27 @@ uint8_t getPinValue(PinName pin)
 	}
 	else if((pin==PA_2)||(pin==PB_2)||(pin==PC_2)||(pin==PD_2)||(pin==PE_2)||(pin==PF_2))
 	{
-		return_value = 0x03;
+		return_value = 0x04;
 	}
 	else if((pin==PA_3)||(pin==PB_3)||(pin==PC_3)||(pin==PD_3)||(pin==PE_3)||(pin==PF_3))
 	{
-		return_value = 0x04;
+		return_value = 0x08;
 	}
 	else if((pin==PA_4)||(pin==PB_4)||(pin==PC_4)||(pin==PD_4)||(pin==PE_4)||(pin==PF_4))
 	{
-		return_value = 0x05;
+		return_value = 0x10;
 	}
 	else if((pin==PA_5)||(pin==PB_5)||(pin==PC_5)||(pin==PD_5)||(pin==PE_5))
 	{
-		return_value = 0x06;
+		return_value = 0x20;
 	}
 	else if((pin==PA_6)||(pin==PB_6)||(pin==PC_6)||(pin==PD_6))
 	{
-		return_value = 0x07;
+		return_value = 0x40;
 	}
 	else if((pin==PA_7)||(pin==PB_7)||(pin==PC_7)||(pin==PD_7))
 	{
-		return_value = 0x08;
+		return_value = 0x80;
 	}
 
 	return return_value;
