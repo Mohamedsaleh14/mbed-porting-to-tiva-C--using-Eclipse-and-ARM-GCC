@@ -6366,7 +6366,7 @@ Memory Configuration
 
 Name             Origin             Length             Attributes
 FLASH            0x00000000         0x00040000         xr
-RAM              0x20000010         0x00007ff0         xrw
+RAM              0x20000268         0x00007ef4         xrw
 *default*        0x00000000         0xffffffff
 
 Linker script and memory map
@@ -6440,7 +6440,7 @@ END GROUP
 LOAD c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/softfp/crtend.o
 LOAD c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/softfp/crtn.o
 
-.text           0x00000000     0x29fc
+.text           0x00000000     0x29f4
  *(.nvic_table)
  .nvic_table    0x00000000      0x26c target\cmsis\startup_tiva.o
                 0x00000000                myvectors
@@ -6506,240 +6506,240 @@ LOAD c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm
  .text._ZN4mbed10DigitalOutaSEi
                 0x00000634       0x1c main.o
                 0x00000634                mbed::DigitalOut::operator=(int)
- .text.main     0x00000650       0x3c main.o
+ .text.main     0x00000650       0x38 main.o
                 0x00000650                main
  .text.NVIC_SetVector
-                0x0000068c       0x74 target\cmsis\cmsis_nvic.o
-                0x0000068c                NVIC_SetVector
+                0x00000688       0x70 target\cmsis\cmsis_nvic.o
+                0x00000688                NVIC_SetVector
  .text.rst_handler
-                0x00000700       0x70 target\cmsis\startup_tiva.o
-                0x00000700                rst_handler
+                0x000006f8       0x70 target\cmsis\startup_tiva.o
+                0x000006f8                rst_handler
  .text.nmi_handler
-                0x00000770        0x8 target\cmsis\startup_tiva.o
-                0x00000770                nmi_handler
+                0x00000768        0x8 target\cmsis\startup_tiva.o
+                0x00000768                nmi_handler
  .text.hardfault_handler
-                0x00000778        0x8 target\cmsis\startup_tiva.o
-                0x00000778                hardfault_handler
+                0x00000770        0x8 target\cmsis\startup_tiva.o
+                0x00000770                hardfault_handler
  .text.empty_def_handler
-                0x00000780        0x8 target\cmsis\startup_tiva.o
-                0x00000780                empty_def_handler
- .text.systick_def_handler
-                0x00000788       0x10 target\cmsis\startup_tiva.o
-                0x00000788                systick_def_handler
+                0x00000778        0x8 target\cmsis\startup_tiva.o
+                0x00000778                empty_def_handler
+ .text.TIMERA_handler
+                0x00000780       0x10 target\cmsis\startup_tiva.o
+                0x00000780                TIMERA_handler
  .text.SystemInit
-                0x00000798       0xbc target\cmsis\system_LM4F.o
-                0x00000798                SystemInit
+                0x00000790       0xbc target\cmsis\system_LM4F.o
+                0x00000790                SystemInit
  .text.gpio_init
-                0x00000854      0x178 target\hal\TARGET_TivaC\gpio_api.o
-                0x00000854                gpio_init
+                0x0000084c      0x178 target\hal\TARGET_TivaC\gpio_api.o
+                0x0000084c                gpio_init
  .text.gpio_write
-                0x000009cc      0x1a4 target\hal\TARGET_TivaC\gpio_api.o
-                0x000009cc                gpio_write
+                0x000009c4      0x1a4 target\hal\TARGET_TivaC\gpio_api.o
+                0x000009c4                gpio_write
  .text.gpio_dir
-                0x00000b70       0xec target\hal\TARGET_TivaC\gpio_api.o
-                0x00000b70                gpio_dir
+                0x00000b68       0xec target\hal\TARGET_TivaC\gpio_api.o
+                0x00000b68                gpio_dir
  .text.gpio_mode
-                0x00000c5c       0x18 target\hal\TARGET_TivaC\gpio_api.o
-                0x00000c5c                gpio_mode
+                0x00000c54       0x18 target\hal\TARGET_TivaC\gpio_api.o
+                0x00000c54                gpio_mode
  .text.getPortNameForPin
-                0x00000c74      0x310 target\hal\TARGET_TivaC\gpio_api.o
-                0x00000c74                getPortNameForPin
+                0x00000c6c      0x310 target\hal\TARGET_TivaC\gpio_api.o
+                0x00000c6c                getPortNameForPin
  .text.getPinValue
-                0x00000f84      0x1a0 target\hal\TARGET_TivaC\gpio_api.o
-                0x00000f84                getPinValue
+                0x00000f7c      0x1a0 target\hal\TARGET_TivaC\gpio_api.o
+                0x00000f7c                getPinValue
  .text.NVIC_EnableIRQ
-                0x00001124       0x34 target\hal\TARGET_TivaC\us_ticker.o
+                0x0000111c       0x34 target\hal\TARGET_TivaC\us_ticker.o
  .text.NVIC_ClearPendingIRQ
-                0x00001158       0x34 target\hal\TARGET_TivaC\us_ticker.o
+                0x00001150       0x34 target\hal\TARGET_TivaC\us_ticker.o
  .text.us_ticker_init
-                0x0000118c       0x70 target\hal\TARGET_TivaC\us_ticker.o
-                0x0000118c                us_ticker_init
+                0x00001184       0x70 target\hal\TARGET_TivaC\us_ticker.o
+                0x00001184                us_ticker_init
  .text.us_ticker_read
-                0x000011fc       0x3c target\hal\TARGET_TivaC\us_ticker.o
-                0x000011fc                us_ticker_read
+                0x000011f4       0x3c target\hal\TARGET_TivaC\us_ticker.o
+                0x000011f4                us_ticker_read
  .text.us_ticker_disable_interrupt
-                0x00001238       0x20 target\hal\TARGET_TivaC\us_ticker.o
-                0x00001238                us_ticker_disable_interrupt
+                0x00001230       0x20 target\hal\TARGET_TivaC\us_ticker.o
+                0x00001230                us_ticker_disable_interrupt
  .text.us_ticker_clear_interrupt
-                0x00001258       0x18 target\hal\TARGET_TivaC\us_ticker.o
-                0x00001258                us_ticker_clear_interrupt
+                0x00001250       0x18 target\hal\TARGET_TivaC\us_ticker.o
+                0x00001250                us_ticker_clear_interrupt
  .text.us_ticker_set_interrupt
-                0x00001270       0x28 target\hal\TARGET_TivaC\us_ticker.o
-                0x00001270                us_ticker_set_interrupt
- .text._ZdlPv   0x00001298        0x4 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(del_op.o)
-                0x00001298                operator delete(void*)
+                0x00001268       0x28 target\hal\TARGET_TivaC\us_ticker.o
+                0x00001268                us_ticker_set_interrupt
+ .text._ZdlPv   0x00001290        0x4 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(del_op.o)
+                0x00001290                operator delete(void*)
  .text._ZN10__cxxabiv120__si_class_type_infoD2Ev
-                0x0000129c       0x14 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(si_class_type_info.o)
-                0x0000129c                __cxxabiv1::__si_class_type_info::~__si_class_type_info()
-                0x0000129c                __cxxabiv1::__si_class_type_info::~__si_class_type_info()
+                0x00001294       0x14 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(si_class_type_info.o)
+                0x00001294                __cxxabiv1::__si_class_type_info::~__si_class_type_info()
+                0x00001294                __cxxabiv1::__si_class_type_info::~__si_class_type_info()
  .text._ZN10__cxxabiv120__si_class_type_infoD0Ev
-                0x000012b0       0x12 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(si_class_type_info.o)
-                0x000012b0                __cxxabiv1::__si_class_type_info::~__si_class_type_info()
+                0x000012a8       0x12 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(si_class_type_info.o)
+                0x000012a8                __cxxabiv1::__si_class_type_info::~__si_class_type_info()
  .text._ZNK10__cxxabiv120__si_class_type_info12__do_dyncastEiNS_17__class_type_info10__sub_kindEPKS1_PKvS4_S6_RNS1_16__dyncast_resultE
-                0x000012c2       0x7c c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(si_class_type_info.o)
-                0x000012c2                __cxxabiv1::__si_class_type_info::__do_dyncast(int, __cxxabiv1::__class_type_info::__sub_kind, __cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info::__dyncast_result&) const
+                0x000012ba       0x7c c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(si_class_type_info.o)
+                0x000012ba                __cxxabiv1::__si_class_type_info::__do_dyncast(int, __cxxabiv1::__class_type_info::__sub_kind, __cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info::__dyncast_result&) const
  .text._ZNK10__cxxabiv120__si_class_type_info20__do_find_public_srcEiPKvPKNS_17__class_type_infoES2_
-                0x0000133e       0x38 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(si_class_type_info.o)
-                0x0000133e                __cxxabiv1::__si_class_type_info::__do_find_public_src(int, void const*, __cxxabiv1::__class_type_info const*, void const*) const
+                0x00001336       0x38 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(si_class_type_info.o)
+                0x00001336                __cxxabiv1::__si_class_type_info::__do_find_public_src(int, void const*, __cxxabiv1::__class_type_info const*, void const*) const
  .text._ZNK10__cxxabiv120__si_class_type_info11__do_upcastEPKNS_17__class_type_infoEPKvRNS1_15__upcast_resultE
-                0x00001376       0x2a c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(si_class_type_info.o)
-                0x00001376                __cxxabiv1::__si_class_type_info::__do_upcast(__cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info::__upcast_result&) const
+                0x0000136e       0x2a c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(si_class_type_info.o)
+                0x0000136e                __cxxabiv1::__si_class_type_info::__do_upcast(__cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info::__upcast_result&) const
  .text._ZN10__cxxabiv111__terminateEPFvvE
-                0x000013a0        0x8 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(eh_terminate.o)
-                0x000013a0                __cxxabiv1::__terminate(void (*)())
+                0x00001398        0x8 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(eh_terminate.o)
+                0x00001398                __cxxabiv1::__terminate(void (*)())
  .text._ZSt13get_terminatev
-                0x000013a8       0x10 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(eh_terminate.o)
-                0x000013a8                std::get_terminate()
+                0x000013a0       0x10 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(eh_terminate.o)
+                0x000013a0                std::get_terminate()
  .text._ZSt9terminatev
-                0x000013b8        0xa c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(eh_terminate.o)
-                0x000013b8                std::terminate()
+                0x000013b0        0xa c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(eh_terminate.o)
+                0x000013b0                std::terminate()
  .text._ZN10__cxxabiv112__unexpectedEPFvvE
-                0x000013c2        0x8 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(eh_terminate.o)
-                0x000013c2                __cxxabiv1::__unexpected(void (*)())
- *fill*         0x000013ca        0x2 
+                0x000013ba        0x8 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(eh_terminate.o)
+                0x000013ba                __cxxabiv1::__unexpected(void (*)())
+ *fill*         0x000013c2        0x2 
  .text._ZSt14get_unexpectedv
-                0x000013cc       0x10 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(eh_terminate.o)
-                0x000013cc                std::get_unexpected()
+                0x000013c4       0x10 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(eh_terminate.o)
+                0x000013c4                std::get_unexpected()
  .text._ZSt10unexpectedv
-                0x000013dc        0xa c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(eh_terminate.o)
-                0x000013dc                std::unexpected()
+                0x000013d4        0xa c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(eh_terminate.o)
+                0x000013d4                std::unexpected()
  .text._ZNSt9type_infoD2Ev
-                0x000013e6        0x2 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(tinfo.o)
-                0x000013e6                std::type_info::~type_info()
-                0x000013e6                std::type_info::~type_info()
+                0x000013de        0x2 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(tinfo.o)
+                0x000013de                std::type_info::~type_info()
+                0x000013de                std::type_info::~type_info()
  .text._ZNKSt9type_info15__is_function_pEv
-                0x000013e8        0x4 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(tinfo.o)
-                0x000013e8                std::type_info::__is_pointer_p() const
-                0x000013e8                std::type_info::__is_function_p() const
+                0x000013e0        0x4 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(tinfo.o)
+                0x000013e0                std::type_info::__is_pointer_p() const
+                0x000013e0                std::type_info::__is_function_p() const
  .text._ZNKSt9type_infoeqERKS_
-                0x000013ec       0x2c c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(tinfo.o)
-                0x000013ec                std::type_info::operator==(std::type_info const&) const
+                0x000013e4       0x2c c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(tinfo.o)
+                0x000013e4                std::type_info::operator==(std::type_info const&) const
  .text._ZN10__cxxabiv1L24__is_gxx_exception_classEPc
-                0x00001418       0x3a c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(eh_arm.o)
- *fill*         0x00001452        0x2 
+                0x00001410       0x3a c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(eh_arm.o)
+ *fill*         0x0000144a        0x2 
  .text.__cxa_type_match
-                0x00001454       0xbc c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(eh_arm.o)
-                0x00001454                __cxa_type_match
+                0x0000144c       0xbc c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(eh_arm.o)
+                0x0000144c                __cxa_type_match
  .text.__cxa_begin_cleanup
-                0x00001510       0x3a c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(eh_arm.o)
-                0x00001510                __cxa_begin_cleanup
+                0x00001508       0x3a c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(eh_arm.o)
+                0x00001508                __cxa_begin_cleanup
  .text._ZNK10__cxxabiv117__class_type_info11__do_upcastEPKS0_PPv
-                0x0000154a       0x34 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(class_type_info.o)
-                0x0000154a                __cxxabiv1::__class_type_info::__do_upcast(__cxxabiv1::__class_type_info const*, void**) const
+                0x00001542       0x34 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(class_type_info.o)
+                0x00001542                __cxxabiv1::__class_type_info::__do_upcast(__cxxabiv1::__class_type_info const*, void**) const
  .text._ZNK10__cxxabiv117__class_type_info20__do_find_public_srcEiPKvPKS0_S2_
-                0x0000157e        0xc c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(class_type_info.o)
-                0x0000157e                __cxxabiv1::__class_type_info::__do_find_public_src(int, void const*, __cxxabiv1::__class_type_info const*, void const*) const
- *fill*         0x0000158a        0x2 
+                0x00001576        0xc c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(class_type_info.o)
+                0x00001576                __cxxabiv1::__class_type_info::__do_find_public_src(int, void const*, __cxxabiv1::__class_type_info const*, void const*) const
+ *fill*         0x00001582        0x2 
  .text._ZN10__cxxabiv117__class_type_infoD2Ev
-                0x0000158c       0x14 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(class_type_info.o)
-                0x0000158c                __cxxabiv1::__class_type_info::~__class_type_info()
-                0x0000158c                __cxxabiv1::__class_type_info::~__class_type_info()
+                0x00001584       0x14 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(class_type_info.o)
+                0x00001584                __cxxabiv1::__class_type_info::~__class_type_info()
+                0x00001584                __cxxabiv1::__class_type_info::~__class_type_info()
  .text._ZN10__cxxabiv117__class_type_infoD0Ev
-                0x000015a0       0x12 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(class_type_info.o)
-                0x000015a0                __cxxabiv1::__class_type_info::~__class_type_info()
+                0x00001598       0x12 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(class_type_info.o)
+                0x00001598                __cxxabiv1::__class_type_info::~__class_type_info()
  .text._ZNK10__cxxabiv117__class_type_info11__do_upcastEPKS0_PKvRNS0_15__upcast_resultE
-                0x000015b2       0x18 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(class_type_info.o)
-                0x000015b2                __cxxabiv1::__class_type_info::__do_upcast(__cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info::__upcast_result&) const
+                0x000015aa       0x18 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(class_type_info.o)
+                0x000015aa                __cxxabiv1::__class_type_info::__do_upcast(__cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info::__upcast_result&) const
  .text._ZNK10__cxxabiv117__class_type_info12__do_dyncastEiNS0_10__sub_kindEPKS0_PKvS3_S5_RNS0_16__dyncast_resultE
-                0x000015ca       0x38 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(class_type_info.o)
-                0x000015ca                __cxxabiv1::__class_type_info::__do_dyncast(int, __cxxabiv1::__class_type_info::__sub_kind, __cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info::__dyncast_result&) const
+                0x000015c2       0x38 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(class_type_info.o)
+                0x000015c2                __cxxabiv1::__class_type_info::__do_dyncast(int, __cxxabiv1::__class_type_info::__sub_kind, __cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info::__dyncast_result&) const
  .text._ZNK10__cxxabiv117__class_type_info10__do_catchEPKSt9type_infoPPvj
-                0x00001602       0x2a c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(class_type_info.o)
-                0x00001602                __cxxabiv1::__class_type_info::__do_catch(std::type_info const*, void**, unsigned int) const
+                0x000015fa       0x2a c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(class_type_info.o)
+                0x000015fa                __cxxabiv1::__class_type_info::__do_catch(std::type_info const*, void**, unsigned int) const
  .text._ZN10__cxxabiv1L24__is_gxx_exception_classEPc
-                0x0000162c       0x3a c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(eh_call.o)
+                0x00001624       0x3a c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(eh_call.o)
  .text.__cxa_call_unexpected
-                0x00001666       0x28 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(eh_call.o)
-                0x00001666                __cxa_call_unexpected
+                0x0000165e       0x28 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(eh_call.o)
+                0x0000165e                __cxa_call_unexpected
  .text._ZN10__cxxabiv1L24__is_gxx_exception_classEPc
-                0x0000168e       0x3a c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(eh_catch.o)
+                0x00001686       0x3a c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(eh_catch.o)
  .text.__cxa_begin_catch
-                0x000016c8       0x54 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(eh_catch.o)
-                0x000016c8                __cxa_begin_catch
+                0x000016c0       0x54 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(eh_catch.o)
+                0x000016c0                __cxa_begin_catch
  .text.__cxa_get_globals
-                0x0000171c        0x8 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(eh_globals.o)
-                0x0000171c                __cxa_get_globals
- .text          0x00001724      0x9dc c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/softfp\libgcc.a(unwind-arm.o)
-                0x000019e0                _Unwind_GetCFA
-                0x000019e4                __gnu_Unwind_RaiseException
-                0x00001a44                __gnu_Unwind_ForcedUnwind
-                0x00001a58                __gnu_Unwind_Resume
-                0x00001a9c                __gnu_Unwind_Resume_or_Rethrow
-                0x00001aac                _Unwind_Complete
-                0x00001ab0                _Unwind_DeleteException
-                0x00001abc                _Unwind_VRS_Get
-                0x00001b08                _Unwind_VRS_Set
-                0x00001b58                __gnu_Unwind_Backtrace
-                0x00001ea4                __aeabi_unwind_cpp_pr0
-                0x00001ea8                __aeabi_unwind_cpp_pr1
-                0x00001eac                __aeabi_unwind_cpp_pr2
-                0x00001eb0                _Unwind_VRS_Pop
- .text          0x00002100      0x1ac c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/softfp\libgcc.a(libunwind.o)
-                0x00002100                __restore_core_regs
-                0x00002100                restore_core_regs
-                0x00002118                __gnu_Unwind_Restore_VFP
-                0x00002120                __gnu_Unwind_Save_VFP
-                0x00002128                __gnu_Unwind_Restore_VFP_D
-                0x00002130                __gnu_Unwind_Save_VFP_D
-                0x00002138                __gnu_Unwind_Restore_VFP_D_16_to_31
-                0x00002140                __gnu_Unwind_Save_VFP_D_16_to_31
-                0x00002148                __gnu_Unwind_Restore_WMMXD
-                0x0000218c                __gnu_Unwind_Save_WMMXD
-                0x000021d0                __gnu_Unwind_Restore_WMMXC
-                0x000021e4                __gnu_Unwind_Save_WMMXC
-                0x000021f8                ___Unwind_RaiseException
-                0x000021f8                _Unwind_RaiseException
-                0x0000221c                _Unwind_Resume
-                0x0000221c                ___Unwind_Resume
-                0x00002240                _Unwind_Resume_or_Rethrow
-                0x00002240                ___Unwind_Resume_or_Rethrow
-                0x00002264                _Unwind_ForcedUnwind
-                0x00002264                ___Unwind_ForcedUnwind
-                0x00002288                ___Unwind_Backtrace
-                0x00002288                _Unwind_Backtrace
- .text          0x000022ac      0x354 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/softfp\libgcc.a(pr-support.o)
-                0x00002304                __gnu_unwind_execute
-                0x000025a8                __gnu_unwind_frame
-                0x000025d0                _Unwind_GetRegionStart
-                0x000025dc                _Unwind_GetLanguageSpecificData
-                0x000025f0                _Unwind_GetTextRelBase
-                0x000025f8                _Unwind_GetDataRelBase
- .text.abort    0x00002600        0xe c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-abort.o)
-                0x00002600                abort
- *fill*         0x0000260e        0x2 
- .text.free     0x00002610       0x10 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-malloc.o)
-                0x00002610                free
- .text.memcpy   0x00002620       0x16 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-memcpy-stub.o)
-                0x00002620                memcpy
- *fill*         0x00002636        0x2 
- .text._free_r  0x00002638       0x9c c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-nano-freer.o)
-                0x00002638                _free_r
+                0x00001714        0x8 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(eh_globals.o)
+                0x00001714                __cxa_get_globals
+ .text          0x0000171c      0x9dc c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/softfp\libgcc.a(unwind-arm.o)
+                0x000019d8                _Unwind_GetCFA
+                0x000019dc                __gnu_Unwind_RaiseException
+                0x00001a3c                __gnu_Unwind_ForcedUnwind
+                0x00001a50                __gnu_Unwind_Resume
+                0x00001a94                __gnu_Unwind_Resume_or_Rethrow
+                0x00001aa4                _Unwind_Complete
+                0x00001aa8                _Unwind_DeleteException
+                0x00001ab4                _Unwind_VRS_Get
+                0x00001b00                _Unwind_VRS_Set
+                0x00001b50                __gnu_Unwind_Backtrace
+                0x00001e9c                __aeabi_unwind_cpp_pr0
+                0x00001ea0                __aeabi_unwind_cpp_pr1
+                0x00001ea4                __aeabi_unwind_cpp_pr2
+                0x00001ea8                _Unwind_VRS_Pop
+ .text          0x000020f8      0x1ac c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/softfp\libgcc.a(libunwind.o)
+                0x000020f8                __restore_core_regs
+                0x000020f8                restore_core_regs
+                0x00002110                __gnu_Unwind_Restore_VFP
+                0x00002118                __gnu_Unwind_Save_VFP
+                0x00002120                __gnu_Unwind_Restore_VFP_D
+                0x00002128                __gnu_Unwind_Save_VFP_D
+                0x00002130                __gnu_Unwind_Restore_VFP_D_16_to_31
+                0x00002138                __gnu_Unwind_Save_VFP_D_16_to_31
+                0x00002140                __gnu_Unwind_Restore_WMMXD
+                0x00002184                __gnu_Unwind_Save_WMMXD
+                0x000021c8                __gnu_Unwind_Restore_WMMXC
+                0x000021dc                __gnu_Unwind_Save_WMMXC
+                0x000021f0                ___Unwind_RaiseException
+                0x000021f0                _Unwind_RaiseException
+                0x00002214                _Unwind_Resume
+                0x00002214                ___Unwind_Resume
+                0x00002238                _Unwind_Resume_or_Rethrow
+                0x00002238                ___Unwind_Resume_or_Rethrow
+                0x0000225c                _Unwind_ForcedUnwind
+                0x0000225c                ___Unwind_ForcedUnwind
+                0x00002280                ___Unwind_Backtrace
+                0x00002280                _Unwind_Backtrace
+ .text          0x000022a4      0x354 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/softfp\libgcc.a(pr-support.o)
+                0x000022fc                __gnu_unwind_execute
+                0x000025a0                __gnu_unwind_frame
+                0x000025c8                _Unwind_GetRegionStart
+                0x000025d4                _Unwind_GetLanguageSpecificData
+                0x000025e8                _Unwind_GetTextRelBase
+                0x000025f0                _Unwind_GetDataRelBase
+ .text.abort    0x000025f8        0xe c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-abort.o)
+                0x000025f8                abort
+ *fill*         0x00002606        0x2 
+ .text.free     0x00002608       0x10 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-malloc.o)
+                0x00002608                free
+ .text.memcpy   0x00002618       0x16 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-memcpy-stub.o)
+                0x00002618                memcpy
+ *fill*         0x0000262e        0x2 
+ .text._free_r  0x00002630       0x9c c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-nano-freer.o)
+                0x00002630                _free_r
  .text._raise_r
-                0x000026d4       0x54 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-signal.o)
-                0x000026d4                _raise_r
- .text.raise    0x00002728       0x10 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-signal.o)
-                0x00002728                raise
- .text._kill_r  0x00002738       0x24 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-signalr.o)
-                0x00002738                _kill_r
+                0x000026cc       0x54 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-signal.o)
+                0x000026cc                _raise_r
+ .text.raise    0x00002720       0x10 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-signal.o)
+                0x00002720                raise
+ .text._kill_r  0x00002730       0x24 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-signalr.o)
+                0x00002730                _kill_r
  .text._getpid_r
-                0x0000275c        0x4 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-signalr.o)
-                0x0000275c                _getpid_r
- .text          0x00002760       0x14 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-strcmp.o)
-                0x00002760                strcmp
- .text._getpid  0x00002774       0x10 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libnosys.a(getpid.o)
-                0x00002774                _getpid
- .text._kill    0x00002784       0x10 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libnosys.a(kill.o)
-                0x00002784                _kill
- .text._exit    0x00002794        0x4 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libnosys.a(_exit.o)
-                0x00002794                _exit
+                0x00002754        0x4 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-signalr.o)
+                0x00002754                _getpid_r
+ .text          0x00002758       0x14 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-strcmp.o)
+                0x00002758                strcmp
+ .text._getpid  0x0000276c       0x10 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libnosys.a(getpid.o)
+                0x0000276c                _getpid
+ .text._kill    0x0000277c       0x10 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libnosys.a(kill.o)
+                0x0000277c                _kill
+ .text._exit    0x0000278c        0x4 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libnosys.a(_exit.o)
+                0x0000278c                _exit
  *(.init)
- .init          0x00002798        0x4 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/softfp/crti.o
-                0x00002798                _init
- .init          0x0000279c        0x8 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/softfp/crtn.o
+ .init          0x00002790        0x4 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/softfp/crti.o
+                0x00002790                _init
+ .init          0x00002794        0x8 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/softfp/crtn.o
  *(.fini)
- .fini          0x000027a4        0x4 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/softfp/crti.o
-                0x000027a4                _fini
- .fini          0x000027a8        0x8 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/softfp/crtn.o
+ .fini          0x0000279c        0x4 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/softfp/crti.o
+                0x0000279c                _fini
+ .fini          0x000027a0        0x8 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/softfp/crtn.o
  *crtbegin.o(.ctors)
  *crtbegin?.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o *crtend?.o) .ctors)
@@ -6751,218 +6751,218 @@ LOAD c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm
  *(SORT(.dtors.*))
  *(.dtors)
  *(.rodata*)
- .rodata        0x000027b0       0x31 common\assert.o
- *fill*         0x000027e1        0x3 
- .rodata        0x000027e4       0x2c common\critical.o
+ .rodata        0x000027a8       0x31 common\assert.o
+ *fill*         0x000027d9        0x3 
+ .rodata        0x000027dc       0x2c common\critical.o
  .rodata.us_interface
-                0x00002810       0x14 common\us_ticker_api.o
+                0x00002808       0x14 common\us_ticker_api.o
  .rodata.us_data
-                0x00002824        0x8 common\us_ticker_api.o
- .rodata        0x0000282c       0x40 target\hal\TARGET_TivaC\gpio_api.o
+                0x0000281c        0x8 common\us_ticker_api.o
+ .rodata        0x00002824       0x40 target\hal\TARGET_TivaC\gpio_api.o
  .rodata._ZTVN10__cxxabiv120__si_class_type_infoE
-                0x0000286c       0x2c c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(si_class_type_info.o)
-                0x0000286c                vtable for __cxxabiv1::__si_class_type_info
+                0x00002864       0x2c c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(si_class_type_info.o)
+                0x00002864                vtable for __cxxabiv1::__si_class_type_info
  .rodata._ZTIN10__cxxabiv120__si_class_type_infoE
-                0x00002898        0xc c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(si_class_type_info.o)
-                0x00002898                typeinfo for __cxxabiv1::__si_class_type_info
+                0x00002890        0xc c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(si_class_type_info.o)
+                0x00002890                typeinfo for __cxxabiv1::__si_class_type_info
  .rodata._ZTSN10__cxxabiv120__si_class_type_infoE
-                0x000028a4       0x25 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(si_class_type_info.o)
-                0x000028a4                typeinfo name for __cxxabiv1::__si_class_type_info
- *fill*         0x000028c9        0x3 
+                0x0000289c       0x25 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(si_class_type_info.o)
+                0x0000289c                typeinfo name for __cxxabiv1::__si_class_type_info
+ *fill*         0x000028c1        0x3 
  .rodata._ZTISt9type_info
-                0x000028cc        0x8 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(tinfo.o)
-                0x000028cc                typeinfo for std::type_info
+                0x000028c4        0x8 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(tinfo.o)
+                0x000028c4                typeinfo for std::type_info
  .rodata._ZTSSt9type_info
-                0x000028d4        0xd c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(tinfo.o)
-                0x000028d4                typeinfo name for std::type_info
- *fill*         0x000028e1        0x3 
+                0x000028cc        0xd c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(tinfo.o)
+                0x000028cc                typeinfo name for std::type_info
+ *fill*         0x000028d9        0x3 
  .rodata._ZTVN10__cxxabiv117__class_type_infoE
-                0x000028e4       0x2c c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(class_type_info.o)
-                0x000028e4                vtable for __cxxabiv1::__class_type_info
+                0x000028dc       0x2c c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(class_type_info.o)
+                0x000028dc                vtable for __cxxabiv1::__class_type_info
  .rodata._ZTIN10__cxxabiv117__class_type_infoE
-                0x00002910        0xc c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(class_type_info.o)
-                0x00002910                typeinfo for __cxxabiv1::__class_type_info
+                0x00002908        0xc c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(class_type_info.o)
+                0x00002908                typeinfo for __cxxabiv1::__class_type_info
  .rodata._ZTSN10__cxxabiv117__class_type_infoE
-                0x0000291c       0x22 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(class_type_info.o)
-                0x0000291c                typeinfo name for __cxxabiv1::__class_type_info
+                0x00002914       0x22 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(class_type_info.o)
+                0x00002914                typeinfo name for __cxxabiv1::__class_type_info
  .rodata._ZTSN10__cxxabiv115__forced_unwindE
-                0x0000293e       0x20 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(eh_exception.o)
-                0x0000293e                typeinfo name for __cxxabiv1::__forced_unwind
- *fill*         0x0000295e        0x2 
+                0x00002936       0x20 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(eh_exception.o)
+                0x00002936                typeinfo name for __cxxabiv1::__forced_unwind
+ *fill*         0x00002956        0x2 
  .rodata._ZTIN10__cxxabiv115__forced_unwindE
-                0x00002960        0x8 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(eh_exception.o)
-                0x00002960                typeinfo for __cxxabiv1::__forced_unwind
+                0x00002958        0x8 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(eh_exception.o)
+                0x00002958                typeinfo for __cxxabiv1::__forced_unwind
  .rodata._ZTSN10__cxxabiv119__foreign_exceptionE
-                0x00002968       0x24 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(eh_exception.o)
-                0x00002968                typeinfo name for __cxxabiv1::__foreign_exception
+                0x00002960       0x24 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(eh_exception.o)
+                0x00002960                typeinfo name for __cxxabiv1::__foreign_exception
  .rodata._ZTIN10__cxxabiv119__foreign_exceptionE
-                0x0000298c        0x8 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(eh_exception.o)
-                0x0000298c                typeinfo for __cxxabiv1::__foreign_exception
+                0x00002984        0x8 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(eh_exception.o)
+                0x00002984                typeinfo for __cxxabiv1::__foreign_exception
  .rodata.__sf_fake_stdin
-                0x00002994       0x20 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-findfp.o)
-                0x00002994                __sf_fake_stdin
+                0x0000298c       0x20 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-findfp.o)
+                0x0000298c                __sf_fake_stdin
  .rodata.__sf_fake_stdout
-                0x000029b4       0x20 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-findfp.o)
-                0x000029b4                __sf_fake_stdout
+                0x000029ac       0x20 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-findfp.o)
+                0x000029ac                __sf_fake_stdout
  .rodata.__sf_fake_stderr
-                0x000029d4       0x20 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-findfp.o)
-                0x000029d4                __sf_fake_stderr
+                0x000029cc       0x20 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-findfp.o)
+                0x000029cc                __sf_fake_stderr
  .rodata.str1.1
-                0x000029f4        0x2 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-impure.o)
+                0x000029ec        0x2 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-impure.o)
  *(.eh_frame*)
- *fill*         0x000029f6        0x2 
- .eh_frame      0x000029f8        0x0 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/softfp/crtbegin.o
- .eh_frame      0x000029f8        0x4 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/softfp/crtend.o
+ *fill*         0x000029ee        0x2 
+ .eh_frame      0x000029f0        0x0 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/softfp/crtbegin.o
+ .eh_frame      0x000029f0        0x4 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/softfp/crtend.o
 
-.glue_7         0x000029fc        0x0
- .glue_7        0x000029fc        0x0 linker stubs
+.glue_7         0x000029f4        0x0
+ .glue_7        0x000029f4        0x0 linker stubs
 
-.glue_7t        0x000029fc        0x0
- .glue_7t       0x000029fc        0x0 linker stubs
+.glue_7t        0x000029f4        0x0
+ .glue_7t       0x000029f4        0x0 linker stubs
 
-.vfp11_veneer   0x000029fc        0x0
- .vfp11_veneer  0x000029fc        0x0 linker stubs
+.vfp11_veneer   0x000029f4        0x0
+ .vfp11_veneer  0x000029f4        0x0 linker stubs
 
-.v4_bx          0x000029fc        0x0
- .v4_bx         0x000029fc        0x0 linker stubs
+.v4_bx          0x000029f4        0x0
+ .v4_bx         0x000029f4        0x0 linker stubs
 
-.iplt           0x000029fc        0x0
- .iplt          0x000029fc        0x0 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/softfp/crtbegin.o
+.iplt           0x000029f4        0x0
+ .iplt          0x000029f4        0x0 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/softfp/crtbegin.o
 
-.ARM.extab      0x000029fc       0x60
+.ARM.extab      0x000029f4       0x60
  *(.ARM.extab* .gnu.linkonce.armextab.*)
  .ARM.extab.text._ZN4mbed10DigitalOutC2E7PinName
-                0x000029fc        0xc common\BusOut.o
+                0x000029f4        0xc common\BusOut.o
  .ARM.extab.text._ZN4mbed10DigitalOut5writeEi
-                0x00002a08        0xc common\BusOut.o
+                0x00002a00        0xc common\BusOut.o
  .ARM.extab.text.__malloc_lock
-                0x00002a14        0xc common\retarget.o
+                0x00002a0c        0xc common\retarget.o
  .ARM.extab.text.__malloc_unlock
-                0x00002a20        0xc common\retarget.o
+                0x00002a18        0xc common\retarget.o
  .ARM.extab.text._ZN4mbed10DigitalOutaSEi
-                0x00002a2c        0xc main.o
+                0x00002a24        0xc main.o
  .ARM.extab.text.main
-                0x00002a38        0xc main.o
- .ARM.extab     0x00002a44       0x18 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/softfp\libgcc.a(pr-support.o)
-                0x00002a5c                __exidx_start = .
+                0x00002a30        0xc main.o
+ .ARM.extab     0x00002a3c       0x18 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/softfp\libgcc.a(pr-support.o)
+                0x00002a54                __exidx_start = .
 
-.ARM.exidx      0x00002a5c       0xf8
+.ARM.exidx      0x00002a54       0xf8
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
  .ARM.exidx.text._ZN4mbed10DigitalOutC2E7PinName
-                0x00002a5c        0x8 common\BusOut.o
+                0x00002a54        0x8 common\BusOut.o
  .ARM.exidx.text._ZN4mbed10DigitalOut5writeEi
-                0x00002a64       0x10 common\BusOut.o
+                0x00002a5c       0x10 common\BusOut.o
                                   0x8 (size before relaxing)
  .ARM.exidx.text.__rtos_malloc_lock
-                0x00002a74        0x0 common\retarget.o
+                0x00002a6c        0x0 common\retarget.o
                                   0x8 (size before relaxing)
  .ARM.exidx.text.__rtos_malloc_unlock
-                0x00002a74        0x0 common\retarget.o
+                0x00002a6c        0x0 common\retarget.o
                                   0x8 (size before relaxing)
  .ARM.exidx.text.__malloc_lock
-                0x00002a74        0x8 common\retarget.o
+                0x00002a6c        0x8 common\retarget.o
  .ARM.exidx.text.__malloc_unlock
-                0x00002a7c       0x10 common\retarget.o
+                0x00002a74       0x10 common\retarget.o
                                   0x8 (size before relaxing)
  .ARM.exidx.text._ZN4mbed10DigitalOutaSEi
-                0x00002a8c        0x8 main.o
+                0x00002a84        0x8 main.o
  .ARM.exidx.text.main
-                0x00002a94       0x10 main.o
+                0x00002a8c       0x10 main.o
                                   0x8 (size before relaxing)
- .ARM.exidx     0x00002aa4       0x78 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/softfp\libgcc.a(unwind-arm.o)
+ .ARM.exidx     0x00002a9c       0x78 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/softfp\libgcc.a(unwind-arm.o)
                                  0xd8 (size before relaxing)
- .ARM.exidx     0x00002b1c       0x38 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/softfp\libgcc.a(pr-support.o)
+ .ARM.exidx     0x00002b14       0x38 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/softfp\libgcc.a(pr-support.o)
                                  0x48 (size before relaxing)
-                0x00002b54                __exidx_end = .
-                0x00002b54                _etext = .
-                0x00002b54                _sidata = .
+                0x00002b4c                __exidx_end = .
+                0x00002b4c                _etext = .
+                0x00002b4c                _sidata = .
 
-.rel.dyn        0x00002b54        0x0
- .rel.iplt      0x00002b54        0x0 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/softfp/crtbegin.o
+.rel.dyn        0x00002b4c        0x0
+ .rel.iplt      0x00002b4c        0x0 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/softfp/crtbegin.o
 
-.data           0x20000010       0x78 load address 0x00002b54
-                0x20000010                __data_start__ = .
-                0x20000010                _data = .
+.data           0x20000268       0x78 load address 0x00002b4c
+                0x20000268                __data_start__ = .
+                0x20000268                _data = .
  *(vtable)
  *(.data*)
  .data._ZN10__cxxabiv119__terminate_handlerE
-                0x20000010        0x4 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(eh_term_handler.o)
-                0x20000010                __cxxabiv1::__terminate_handler
+                0x20000268        0x4 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(eh_term_handler.o)
+                0x20000268                __cxxabiv1::__terminate_handler
  .data._ZN10__cxxabiv120__unexpected_handlerE
-                0x20000014        0x4 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(eh_unex_handler.o)
-                0x20000014                __cxxabiv1::__unexpected_handler
+                0x2000026c        0x4 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(eh_unex_handler.o)
+                0x2000026c                __cxxabiv1::__unexpected_handler
  .data.impure_data
-                0x20000018       0x60 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-impure.o)
+                0x20000270       0x60 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-impure.o)
  .data._impure_ptr
-                0x20000078        0x4 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-impure.o)
-                0x20000078                _impure_ptr
-                0x2000007c                . = ALIGN (0x4)
-                0x2000007c                PROVIDE (__preinit_array_start, .)
+                0x200002d0        0x4 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-impure.o)
+                0x200002d0                _impure_ptr
+                0x200002d4                . = ALIGN (0x4)
+                0x200002d4                PROVIDE (__preinit_array_start, .)
  *(.preinit_array)
-                0x2000007c                PROVIDE (__preinit_array_end, .)
-                0x2000007c                . = ALIGN (0x4)
-                0x2000007c                PROVIDE (__init_array_start, .)
+                0x200002d4                PROVIDE (__preinit_array_end, .)
+                0x200002d4                . = ALIGN (0x4)
+                0x200002d4                PROVIDE (__init_array_start, .)
  *(SORT(.init_array.*))
  *(.init_array)
- .init_array    0x2000007c        0x4 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/softfp/crtbegin.o
-                0x20000080                PROVIDE (__init_array_end, .)
-                0x20000080                . = ALIGN (0x4)
+ .init_array    0x200002d4        0x4 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/softfp/crtbegin.o
+                0x200002d8                PROVIDE (__init_array_end, .)
+                0x200002d8                . = ALIGN (0x4)
                 [!provide]                PROVIDE (__fini_array_start, .)
  *(SORT(.fini_array.*))
  *(.fini_array)
- .fini_array    0x20000080        0x4 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/softfp/crtbegin.o
+ .fini_array    0x200002d8        0x4 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/softfp/crtbegin.o
                 [!provide]                PROVIDE (__fini_array_end, .)
  *(.jcr*)
- .jcr           0x20000084        0x0 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/softfp/crtbegin.o
- .jcr           0x20000084        0x4 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/softfp/crtend.o
-                0x20000088                . = ALIGN (0x4)
-                0x20000088                __data_end__ = .
-                0x20000088                _edata = .
+ .jcr           0x200002dc        0x0 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/softfp/crtbegin.o
+ .jcr           0x200002dc        0x4 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/softfp/crtend.o
+                0x200002e0                . = ALIGN (0x4)
+                0x200002e0                __data_end__ = .
+                0x200002e0                _edata = .
 
-.igot.plt       0x20000088        0x0 load address 0x00002bcc
- .igot.plt      0x20000088        0x0 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/softfp/crtbegin.o
+.igot.plt       0x200002e0        0x0 load address 0x00002bc4
+ .igot.plt      0x200002e0        0x0 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/softfp/crtbegin.o
 
-.bss            0x20000088      0x144 load address 0x00002bcc
-                0x20000088                . = ALIGN (0x4)
-                0x20000088                __bss_start__ = .
-                0x20000088                _bss = .
+.bss            0x200002e0      0x144 load address 0x00002bc4
+                0x200002e0                . = ALIGN (0x4)
+                0x200002e0                __bss_start__ = .
+                0x200002e0                _bss = .
  *(.bss*)
- .bss           0x20000088       0x1c c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/softfp/crtbegin.o
+ .bss           0x200002e0       0x1c c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/softfp/crtbegin.o
  .bss.interrupt_enable_counter
-                0x200000a4        0x4 common\critical.o
+                0x200002fc        0x4 common\critical.o
  .bss.critical_interrupts_disabled
-                0x200000a8        0x1 common\critical.o
- *fill*         0x200000a9        0x3 
- .bss.events    0x200000ac        0x8 common\us_ticker_api.o
+                0x20000300        0x1 common\critical.o
+ *fill*         0x20000301        0x3 
+ .bss.events    0x20000304        0x8 common\us_ticker_api.o
  .bss.pui32Stack
-                0x200000b4      0x100 target\cmsis\startup_tiva.o
+                0x2000030c      0x100 target\cmsis\startup_tiva.o
  .bss.us_ticker_inited
-                0x200001b4        0x1 target\hal\TARGET_TivaC\us_ticker.o
- *fill*         0x200001b5        0x3 
+                0x2000040c        0x1 target\hal\TARGET_TivaC\us_ticker.o
+ *fill*         0x2000040d        0x3 
  .bss._ZL10eh_globals
-                0x200001b8        0xc c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(eh_globals.o)
+                0x20000410        0xc c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(eh_globals.o)
  .bss.__malloc_free_list
-                0x200001c4        0x4 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-nano-mallocr.o)
-                0x200001c4                __malloc_free_list
+                0x2000041c        0x4 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-nano-mallocr.o)
+                0x2000041c                __malloc_free_list
  *(COMMON)
- COMMON         0x200001c8        0x4 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-reent.o)
-                0x200001c8                errno
-                0x200001cc                . = ALIGN (0x4)
-                0x200001cc                __bss_end__ = .
-                0x200001cc                _ebss = .
+ COMMON         0x20000420        0x4 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-reent.o)
+                0x20000420                errno
+                0x20000424                . = ALIGN (0x4)
+                0x20000424                __bss_end__ = .
+                0x20000424                _ebss = .
 
-.heap           0x200001cc        0x0
-                0x200001cc                __end__ = .
-                0x200001cc                end = __end__
+.heap           0x20000424        0x0
+                0x20000424                __end__ = .
+                0x20000424                end = __end__
  *(.heap*)
-                0x200001cc                __HeapLimit = .
+                0x20000424                __HeapLimit = .
 
-.stack_dummy    0x200001cc        0x0
+.stack_dummy    0x20000424        0x0
  *(.stack*)
-                0x20008000                __StackTop = (ORIGIN (RAM) + LENGTH (RAM))
-                0x20008000                _estack = __StackTop
-                0x20008000                __StackLimit = (__StackTop - SIZEOF (.stack_dummy))
-                0x20008000                PROVIDE (__stack, __StackTop)
+                0x2000815c                __StackTop = (ORIGIN (RAM) + LENGTH (RAM))
+                0x2000815c                _estack = __StackTop
+                0x2000815c                __StackLimit = (__StackTop - SIZEOF (.stack_dummy))
+                0x2000815c                PROVIDE (__stack, __StackTop)
                 0x00000001                ASSERT ((__StackLimit >= __HeapLimit), region RAM overflowed with stack)
 OUTPUT(mbedTivaC.elf elf32-littlearm)
 
@@ -7197,7 +7197,7 @@ OUTPUT(mbedTivaC.elf elf32-littlearm)
  .debug_macro   0x000035be       0xd4 target\hal\TARGET_TivaC\gpio_api.o
  .debug_macro   0x00003692      0x127 target\hal\TARGET_TivaC\us_ticker.o
 
-.debug_line     0x00000000     0x4f5d
+.debug_line     0x00000000     0x4f4f
  .debug_line    0x00000000      0x859 common\BusOut.o
  .debug_line    0x00000859      0x38d common\assert.o
  .debug_line    0x00000be6      0x545 common\board.o
@@ -7208,13 +7208,13 @@ OUTPUT(mbedTivaC.elf elf32-littlearm)
  .debug_line    0x00002c03      0x3b0 common\us_ticker_api.o
  .debug_line    0x00002fb3      0x3d2 common\wait_api.o
  .debug_line    0x00003385      0x8d9 main.o
- .debug_line    0x00003c5e      0x2d4 target\cmsis\cmsis_nvic.o
- .debug_line    0x00003f32      0x31d target\cmsis\startup_tiva.o
- .debug_line    0x0000424f      0x347 target\cmsis\system_LM4F.o
- .debug_line    0x00004596      0x566 target\hal\TARGET_TivaC\gpio_api.o
- .debug_line    0x00004afc      0x461 target\hal\TARGET_TivaC\us_ticker.o
+ .debug_line    0x00003c5e      0x2c6 target\cmsis\cmsis_nvic.o
+ .debug_line    0x00003f24      0x31d target\cmsis\startup_tiva.o
+ .debug_line    0x00004241      0x347 target\cmsis\system_LM4F.o
+ .debug_line    0x00004588      0x566 target\hal\TARGET_TivaC\gpio_api.o
+ .debug_line    0x00004aee      0x461 target\hal\TARGET_TivaC\us_ticker.o
 
-.debug_str      0x00000000    0x15073
+.debug_str      0x00000000    0x1506e
  .debug_str     0x00000000     0xf873 common\BusOut.o
                                0xfbd2 (size before relaxing)
  .debug_str     0x0000f873      0x4f0 common\assert.o
@@ -7237,13 +7237,13 @@ OUTPUT(mbedTivaC.elf elf32-littlearm)
                               0x108f0 (size before relaxing)
  .debug_str     0x00013dc6      0x45c target\cmsis\cmsis_nvic.o
                                0x9f32 (size before relaxing)
- .debug_str     0x00014222      0x15d target\cmsis\startup_tiva.o
-                               0x9bac (size before relaxing)
- .debug_str     0x0001437f      0x9f0 target\cmsis\system_LM4F.o
+ .debug_str     0x00014222      0x158 target\cmsis\startup_tiva.o
+                               0x9ba7 (size before relaxing)
+ .debug_str     0x0001437a      0x9f0 target\cmsis\system_LM4F.o
                                0xa407 (size before relaxing)
- .debug_str     0x00014d6f       0xe0 target\hal\TARGET_TivaC\gpio_api.o
+ .debug_str     0x00014d6a       0xe0 target\hal\TARGET_TivaC\gpio_api.o
                                0xa4b2 (size before relaxing)
- .debug_str     0x00014e4f      0x224 target\hal\TARGET_TivaC\us_ticker.o
+ .debug_str     0x00014e4a      0x224 target\hal\TARGET_TivaC\us_ticker.o
                                0xabc0 (size before relaxing)
 
 .debug_frame    0x00000000     0x20c4
