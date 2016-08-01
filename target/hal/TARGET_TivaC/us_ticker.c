@@ -27,7 +27,7 @@ void us_ticker_init(void)
 	TIMER0->CTL 	  = 0x00;
 	TIMER0->CFG 	  = 0x00;
 	TIMER0->TAMR 	  = TIMERA_PERIODIC_MODE|TIMERA_COUNT_UP;
-	TIMER0->TAILR 	  = 100000;
+	//TIMER0->TAILR 	  = 80;
 	TIMER0->IMR		  = TIMERA_TIMEOUT_INTERRUPT;
 	TIMER0->CTL		  = TIMERA_ENABLE_BIT|TIMERA_STALL_BIT;
 	NVIC_SetVector(TIMER0A_IRQn, (uint32_t)us_ticker_irq_handler);
@@ -43,7 +43,7 @@ uint32_t us_ticker_read() {
     if (!us_ticker_inited)
         us_ticker_init();
     return_ticks = TIMER0->TAR;
-    return_ticks /= 80;
+    return_ticks = (return_ticks/80);
     return return_ticks;
 }
 
