@@ -7,7 +7,7 @@ uint8_t getPinValue(PinName pin);
 
 void gpio_init(gpio_t *obj, PinName pin)
 {
-	uint8_t pin_value = 0x00;
+	PinValue pin_value = PIN_NULL;
 	PortName init_port;
 
 	init_port = getPortNameForPin(pin);
@@ -19,32 +19,26 @@ void gpio_init(gpio_t *obj, PinName pin)
 	case portA:
 		obj->port = portA;
 		SYSCTL->RCGCGPIO |= 0x01;
-		GPIOA->DEN |= (obj->pin_val);
 		break;
 	case portB:
 		obj->port = portB;
 		SYSCTL->RCGCGPIO |= 0x02;
-		GPIOB->DEN |= (obj->pin_val);
 		break;
 	case portC:
 		obj->port = portC;
 		SYSCTL->RCGCGPIO |= 0x04;
-		GPIOC->DEN |= (obj->pin_val);
 		break;
 	case portD:
 		obj->port = portD;
 		SYSCTL->RCGCGPIO |= 0x08;
-		GPIOD->DEN |= (obj->pin_val);
 		break;
 	case portE:
 		obj->port = portE;
 		SYSCTL->RCGCGPIO |= 0x10;
-		GPIOE->DEN |= (obj->pin_val);
 		break;
 	case portF:
 		obj->port = portF;
 		SYSCTL->RCGCGPIO |= 0x20;
-		GPIOF->DEN |= (obj->pin_val);
 		break;
 	}
 }
@@ -111,35 +105,202 @@ void gpio_dir(gpio_t *obj, PinDirection direction)
 	PortName set_port;
     MBED_ASSERT(obj->pin != (PinName)NC);
     set_port = obj->port;
-    switch(set_port)
+    if(direction == PIN_OUTPUT)
     {
-    case (portA):
-		GPIOA->DIR |= (obj->pin_val);
-    		break;
-    case (portB):
-		GPIOB->DIR |= (obj->pin_val);
-    		break;
-    case (portC):
-		GPIOC->DIR |= (obj->pin_val);
-    		break;
-    case (portD):
-		GPIOD->DIR |= (obj->pin_val);
-    		break;
-    case (portE):
-		GPIOE->DIR |= (obj->pin_val);
-    		break;
-    case (portF):
-		GPIOF->DIR |= (obj->pin_val);
-    		break;
+        switch(set_port)
+        {
+        case (portA):
+    		GPIOA->DIR |= (obj->pin_val);
+			GPIOA->DEN |= (obj->pin_val);
+        		break;
+        case (portB):
+    		GPIOB->DIR |= (obj->pin_val);
+    		GPIOB->DEN |= (obj->pin_val);
+        		break;
+        case (portC):
+    		GPIOC->DIR |= (obj->pin_val);
+        	GPIOC->DEN |= (obj->pin_val);
+        		break;
+        case (portD):
+    		GPIOD->DIR |= (obj->pin_val);
+    		GPIOD->DEN |= (obj->pin_val);
+        		break;
+        case (portE):
+    		GPIOE->DIR |= (obj->pin_val);
+    		GPIOE->DEN |= (obj->pin_val);
+        		break;
+        case (portF):
+    		GPIOF->DIR |= (obj->pin_val);
+    		GPIOF->DEN |= (obj->pin_val);
+        		break;
+        }
+    }
+    else if (direction == PIN_INPUT)
+    {
+        switch(set_port)
+        {
+        case (portA):
+    		GPIOA->DIR &= ~(obj->pin_val);
+        	GPIOA->DEN |= (obj->pin_val);
+        		break;
+        case (portB):
+    		GPIOB->DIR &= ~(obj->pin_val);
+        	GPIOB->DEN |= (obj->pin_val);
+        		break;
+        case (portC):
+    		GPIOC->DIR &= ~(obj->pin_val);
+        	GPIOC->DEN |= (obj->pin_val);
+        		break;
+        case (portD):
+    		GPIOD->DIR &= ~(obj->pin_val);
+        	GPIOD->DEN |= (obj->pin_val);
+        		break;
+        case (portE):
+    		GPIOE->DIR &= ~(obj->pin_val);
+        	GPIOE->DEN |= (obj->pin_val);
+        		break;
+        case (portF):
+    		GPIOF->DIR &= ~(obj->pin_val);
+        	GPIOF->DEN |= (obj->pin_val);
+        		break;
+        }
     }
 }
 
 
 void gpio_mode(gpio_t *obj, PinMode mode)
 {
-
+	PortName set_port;
+	MBED_ASSERT(obj->pin != (PinName)NC);
+	set_port = obj->port;
+	if((mode == PullUp)||(mode == PullDefault))
+	{
+        switch(set_port)
+        {
+        case (portA):
+			GPIOA->DR2R |= (obj->pin_val);
+        	GPIOA->PUR  |= (obj->pin_val);
+			break;
+        case (portB):
+			GPIOB->DR2R |= (obj->pin_val);
+			GPIOB->PUR  |= (obj->pin_val);
+			break;
+        case (portC):
+			GPIOC->DR2R |= (obj->pin_val);
+			GPIOC->PUR  |= (obj->pin_val);
+			break;
+        case (portD):
+			GPIOC->DR2R |= (obj->pin_val);
+			GPIOC->PUR  |= (obj->pin_val);
+			break;
+        case (portE):
+			GPIOE->DR2R |= (obj->pin_val);
+			GPIOE->PUR  |= (obj->pin_val);
+			break;
+        case (portF):
+			GPIOF->DR2R |= (obj->pin_val);
+			GPIOF->PUR  |= (obj->pin_val);
+			break;
+        }
+	}
+	else if(mode == PullDown)
+	{
+        switch(set_port)
+        {
+        case (portA):
+			GPIOA->DR2R |= (obj->pin_val);
+        	GPIOA->PDR  |= (obj->pin_val);
+			break;
+        case (portB):
+			GPIOB->DR2R |= (obj->pin_val);
+			GPIOB->PDR  |= (obj->pin_val);
+			break;
+        case (portC):
+			GPIOC->DR2R |= (obj->pin_val);
+			GPIOC->PDR  |= (obj->pin_val);
+			break;
+        case (portD):
+			GPIOC->DR2R |= (obj->pin_val);
+			GPIOC->PDR  |= (obj->pin_val);
+			break;
+        case (portE):
+			GPIOE->DR2R |= (obj->pin_val);
+			GPIOE->PDR  |= (obj->pin_val);
+			break;
+        case (portF):
+			GPIOF->DR2R |= (obj->pin_val);
+			GPIOF->PDR  |= (obj->pin_val);
+			break;
+        }
+	}
+	else if(mode == OpenDrain)
+	{
+        switch(set_port)
+        {
+        case (portA):
+			GPIOA->DR2R |= (obj->pin_val);
+        	GPIOA->ODR  |= (obj->pin_val);
+			break;
+        case (portB):
+			GPIOB->DR2R |= (obj->pin_val);
+			GPIOB->ODR  |= (obj->pin_val);
+			break;
+        case (portC):
+			GPIOC->DR2R |= (obj->pin_val);
+			GPIOC->ODR  |= (obj->pin_val);
+			break;
+        case (portD):
+			GPIOC->DR2R |= (obj->pin_val);
+			GPIOC->ODR  |= (obj->pin_val);
+			break;
+        case (portE):
+			GPIOE->DR2R |= (obj->pin_val);
+			GPIOE->ODR  |= (obj->pin_val);
+			break;
+        case (portF):
+			GPIOF->DR2R |= (obj->pin_val);
+			GPIOF->ODR  |= (obj->pin_val);
+			break;
+        }
+	}
+	else
+	{
+		//TODO : assert other values of mode
+	}
 }
 
+
+int gpio_read(gpio_t *obj)
+{
+	PortName set_port;
+	int return_value;
+
+	set_port = obj->port;
+
+    switch(set_port)
+    {
+    case (portA):
+		return_value = (GPIOA->DATA)&(obj->pin_val);
+    		break;
+    case (portB):
+		return_value = (GPIOB->DATA)&(obj->pin_val);
+    		break;
+    case (portC):
+		return_value = (GPIOC->DATA)&(obj->pin_val);
+    		break;
+    case (portD):
+		return_value = (GPIOD->DATA)&(obj->pin_val);
+    		break;
+    case (portE):
+		return_value = (GPIOE->DATA)&(obj->pin_val);
+    		break;
+    case (portF):
+		return_value = (GPIOF->DATA)&(obj->pin_val);
+    		break;
+    }
+
+    return return_value;
+}
 
 /**Local Implementation**/
 PortName getPortNameForPin(PinName pin)
@@ -188,42 +349,43 @@ PortName getPortNameForPin(PinName pin)
 	return return_name;
 }
 
-uint8_t getPinValue(PinName pin)
+PinValue getPinValue(PinName pin)
 {
-	uint8_t return_value;
+	PinValue return_value;
 
 	if((pin==PA_0)||(pin==PB_0)||(pin==PC_0)||(pin==PD_0)||(pin==PE_0)||(pin==PF_0))
 	{
-		return_value = 0x01;
+		return_value = PIN0;
 	}
 	else if((pin==PA_1)||(pin==PB_1)||(pin==PC_1)||(pin==PD_1)||(pin==PE_1)||(pin==PF_1))
 	{
-		return_value = 0x02;
+		return_value = PIN1;
 	}
 	else if((pin==PA_2)||(pin==PB_2)||(pin==PC_2)||(pin==PD_2)||(pin==PE_2)||(pin==PF_2))
 	{
-		return_value = 0x04;
+		return_value = PIN2;
 	}
 	else if((pin==PA_3)||(pin==PB_3)||(pin==PC_3)||(pin==PD_3)||(pin==PE_3)||(pin==PF_3))
 	{
-		return_value = 0x08;
+		return_value = PIN3;
 	}
 	else if((pin==PA_4)||(pin==PB_4)||(pin==PC_4)||(pin==PD_4)||(pin==PE_4)||(pin==PF_4))
 	{
-		return_value = 0x10;
+		return_value = PIN4;
 	}
 	else if((pin==PA_5)||(pin==PB_5)||(pin==PC_5)||(pin==PD_5)||(pin==PE_5))
 	{
-		return_value = 0x20;
+		return_value = PIN5;
 	}
 	else if((pin==PA_6)||(pin==PB_6)||(pin==PC_6)||(pin==PD_6))
 	{
-		return_value = 0x40;
+		return_value = PIN6;
 	}
 	else if((pin==PA_7)||(pin==PB_7)||(pin==PC_7)||(pin==PD_7))
 	{
-		return_value = 0x80;
+		return_value = PIN7;
 	}
 
 	return return_value;
 }
+

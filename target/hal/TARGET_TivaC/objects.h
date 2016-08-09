@@ -35,7 +35,7 @@ typedef enum {
 typedef struct {
     PinName  pin;
     PortName port;
-    uint8_t pin_val;
+    PinValue pin_val;
 } gpio_t;
 
 

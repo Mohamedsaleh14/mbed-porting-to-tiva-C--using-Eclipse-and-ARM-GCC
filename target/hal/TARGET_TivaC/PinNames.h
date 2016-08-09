@@ -81,6 +81,19 @@ typedef enum {
     NC = (int)0xFFFFFFFF,
 } PinName;
 
+typedef enum{
+	PIN_NULL = 0x00,
+	PIN0 = 0x01,
+	PIN1 = 0x02,
+	PIN2 = 0x04,
+	PIN3 = 0x08,
+	PIN4 = 0x10,
+	PIN5 = 0x20,
+	PIN6 = 0x40,
+	PIN7 = 0x80
+}PinValue;
+
+
 typedef enum {
     PullUp,
     PullDown,
