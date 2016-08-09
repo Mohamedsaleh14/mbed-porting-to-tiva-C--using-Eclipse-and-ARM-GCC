@@ -298,6 +298,10 @@ int gpio_read(gpio_t *obj)
 		return_value = (GPIOF->DATA)&(obj->pin_val);
     		break;
     }
+    if (return_value >0)
+    {
+    	return_value = 1;
+    }
 
     return return_value;
 }
