@@ -282,9 +282,16 @@ static inline void uart_irq(uint32_t iir, uint32_t index, UART0_Type *puart)
 
     if(irq_type == RxIrq)
     {
-    	//clear interrupt
+    	puart->ICR = (uint32_t)0x30;
     }
 
+    if(uart_data[index].serial_irq_id != 0)
+    {
+    	if ((irq_type != RxIrq) || (uart_data[index].rx_irq_set_api))
+    	{
+    		irq_handler(uart_data[index].serial_irq_id, irq_type);
+    	}
+    }
 
 }
 static void UART0_Irq(void)
