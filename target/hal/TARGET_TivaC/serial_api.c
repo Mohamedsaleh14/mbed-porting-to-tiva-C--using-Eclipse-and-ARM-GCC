@@ -1,5 +1,6 @@
 #include "serial_api.h"
 #include "cmsis_nvic.h"
+#include <string.h>
 
 #define UART_NUM    8
 
@@ -39,6 +40,7 @@ static void UART7_Irq(void);
 void serial_init(serial_t *obj, PinName tx, PinName rx)
 {
 	PortName uart_port = PORT_NC;
+	int is_stdio_uart = 0;
 	uart_port = getUartParam(obj,tx,rx);
 	MBED_ASSERT(obj->port != (PortName)PORT_NC);
 
@@ -101,6 +103,14 @@ void serial_init(serial_t *obj, PinName tx, PinName rx)
 			obj->puart = UART7;
 			break;
 	}
+
+	is_stdio_uart = (obj->uart == STDIO_UART) ? (1) : (0);
+    if (is_stdio_uart)
+    {
+        stdio_uart_inited = 1;
+        serial_baud (obj, STDIO_BAUD);
+        memcpy(&stdio_uart, obj, sizeof(serial_t));
+    }
 }
 
 void serial_irq_set(serial_t *obj, SerialIrq irq, uint32_t enable)
@@ -206,6 +216,20 @@ int  serial_writable(serial_t *obj)
 		return_val = FALSE;
 	}
 	return return_val;
+}
+
+void serial_baud(serial_t *obj, int baudrate)
+{
+	if(baudrate == 115200)
+	{
+		obj->puart->IBRD = 43;
+		obj->puart->FBRD = 26;
+	}
+	else if(baudrate == 9600)
+	{
+		obj->puart->IBRD = 520;
+		obj->puart->FBRD = 53;
+	}
 }
 
 void serial_clear(serial_t *obj)
