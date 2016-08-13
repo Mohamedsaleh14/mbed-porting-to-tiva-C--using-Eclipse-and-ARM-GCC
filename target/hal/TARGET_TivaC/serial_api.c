@@ -168,24 +168,43 @@ void serial_irq_handler(serial_t *obj, uart_irq_handler handler, uint32_t id)
 
 int  serial_getc(serial_t *obj)
 {
-	int return_val;
-	return return_val;
+	int data;
+	while (serial_readable(obj) == FALSE);
+	data = ((UART5->DR)&0xFF);
+	return data;
 }
 
 void serial_putc(serial_t *obj, int c)
 {
-
+	while (serial_writable(obj) == FALSE);
+	obj->puart->DR = (c&0xFF);
 }
 
 int  serial_readable(serial_t *obj)
 {
 	int return_val;
+	if (((obj->puart->FR)&0x10)== 0)
+	{
+		return_val = TRUE;
+	}
+	else if(((obj->puart->FR)&0x10)== 0x10)
+	{
+		return_val = FALSE;
+	}
 	return return_val;
 }
 
 int  serial_writable(serial_t *obj)
 {
 	int return_val;
+	if(((obj->puart->FR)&0x20)==0)
+	{
+		return_val = TRUE;
+	}
+	else if (((obj->puart->FR)&0x20)==0x20)
+	{
+		return_val = FALSE;
+	}
 	return return_val;
 }
 
