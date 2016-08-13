@@ -272,12 +272,20 @@ static PortName getUartParam(serial_t *obj, PinName tx, PinName rx)
 static inline void uart_irq(uint32_t iir, uint32_t index, UART0_Type *puart)
 {
 	SerialIrq irq_type;
-    switch (iir) {
+    switch (iir)
+    {
         case ((uint32_t)0x20): irq_type = TxIrq; break;
         case ((uint32_t)0x10): irq_type = RxIrq; break;
         case ((uint32_t)0x30): irq_type = RxIrq; break;
         default: return;
     }
+
+    if(irq_type == RxIrq)
+    {
+    	//clear interrupt
+    }
+
+
 }
 static void UART0_Irq(void)
 {
