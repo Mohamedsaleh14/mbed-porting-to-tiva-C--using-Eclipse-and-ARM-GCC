@@ -42,6 +42,7 @@ void serial_init(serial_t *obj, PinName tx, PinName rx)
 	PortName uart_port = PORT_NC;
 	int is_stdio_uart = 0;
 	uart_port = getUartParam(obj,tx,rx);
+	obj->port = uart_port;
 	MBED_ASSERT(obj->port != (PortName)PORT_NC);
 
 	switch(uart_port)

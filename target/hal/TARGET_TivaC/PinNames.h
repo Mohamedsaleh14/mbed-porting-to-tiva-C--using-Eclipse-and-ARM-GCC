@@ -25,7 +25,7 @@ extern "C" {
 #define STDIO_UART_TX	U0Tx
 #define STDIO_UART_RX	U0Rx
 #define STDIO_UART      UART_0
-#define STDIO_BAUD      9600
+#define STDIO_BAUD      115200
 
 typedef enum {
     PIN_INPUT,

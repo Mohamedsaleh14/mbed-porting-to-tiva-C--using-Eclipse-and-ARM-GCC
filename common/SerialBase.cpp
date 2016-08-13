@@ -26,7 +26,7 @@ SerialBase::SerialBase(PinName tx, PinName rx) :
                                                  _thunk_irq(this), _tx_usage(DMA_USAGE_NEVER),
                                                  _rx_usage(DMA_USAGE_NEVER),
 #endif
-                                                _serial(), _baud(9600) {
+                                                _serial(), _baud(115200) {
     // No lock needed in the constructor
 
     serial_init(&_serial, tx, rx);
