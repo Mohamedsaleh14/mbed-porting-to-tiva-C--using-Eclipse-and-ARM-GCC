@@ -72,8 +72,8 @@
 class BufferedSerial : public RawSerial 
 {
 private:
-    MyBuffer <char> _rxbuf;
-    MyBuffer <char> _txbuf;
+    MyBuffer <unsigned char> _rxbuf;
+    MyBuffer <unsigned char> _txbuf;
     uint32_t      _buf_size;
     uint32_t      _tx_multiple;
  

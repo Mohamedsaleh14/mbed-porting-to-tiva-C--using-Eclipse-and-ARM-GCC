@@ -56,7 +56,7 @@ void core_util_critical_section_enter(void)
 #else
 #warning "core_util_critical_section_enter needs fixing to work from unprivileged code"
 #endif /* FEATURE_UVISOR */
-    interrupt_enable_counter++;
+    interrupt_enable_counter ++;
 }
 
 void core_util_critical_section_exit(void)
@@ -73,7 +73,7 @@ void core_util_critical_section_exit(void)
 #warning "core_util_critical_section_exit needs fixing to work from unprivileged code"
 #endif /* FEATURE_UVISOR */
 
-        interrupt_enable_counter--;
+        interrupt_enable_counter --;
 
         /* Only re-enable interrupts if we are exiting the last of the nested critical sections and
            interrupts were enabled on entry to the first critical section.

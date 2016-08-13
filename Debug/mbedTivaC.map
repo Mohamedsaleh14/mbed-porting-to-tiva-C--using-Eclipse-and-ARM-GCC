@@ -5936,23 +5936,11 @@ Discarded input sections
  .text          0x00000000        0x0 flash-esp8266\bufferedSerial\buffer\MyBuffer.o
  .data          0x00000000        0x0 flash-esp8266\bufferedSerial\buffer\MyBuffer.o
  .bss           0x00000000        0x0 flash-esp8266\bufferedSerial\buffer\MyBuffer.o
- .text._ZN8MyBufferIhEC2Em
-                0x00000000       0x34 flash-esp8266\bufferedSerial\buffer\MyBuffer.o
- .ARM.extab.text._ZN8MyBufferIhEC2Em
-                0x00000000        0xc flash-esp8266\bufferedSerial\buffer\MyBuffer.o
- .ARM.exidx.text._ZN8MyBufferIhEC2Em
-                0x00000000        0x8 flash-esp8266\bufferedSerial\buffer\MyBuffer.o
  .text._ZN8MyBufferIhE7getSizeEv
                 0x00000000       0x18 flash-esp8266\bufferedSerial\buffer\MyBuffer.o
  .ARM.extab.text._ZN8MyBufferIhE7getSizeEv
                 0x00000000        0x0 flash-esp8266\bufferedSerial\buffer\MyBuffer.o
  .ARM.exidx.text._ZN8MyBufferIhE7getSizeEv
-                0x00000000        0x8 flash-esp8266\bufferedSerial\buffer\MyBuffer.o
- .text._ZN8MyBufferIhED2Ev
-                0x00000000       0x28 flash-esp8266\bufferedSerial\buffer\MyBuffer.o
- .ARM.extab.text._ZN8MyBufferIhED2Ev
-                0x00000000        0x0 flash-esp8266\bufferedSerial\buffer\MyBuffer.o
- .ARM.exidx.text._ZN8MyBufferIhED2Ev
                 0x00000000        0x8 flash-esp8266\bufferedSerial\buffer\MyBuffer.o
  .text._ZN8MyBufferIhE3putEh
                 0x00000000       0x44 flash-esp8266\bufferedSerial\buffer\MyBuffer.o
@@ -5971,12 +5959,6 @@ Discarded input sections
  .ARM.extab.text._ZN8MyBufferIhE4headEv
                 0x00000000        0x0 flash-esp8266\bufferedSerial\buffer\MyBuffer.o
  .ARM.exidx.text._ZN8MyBufferIhE4headEv
-                0x00000000        0x8 flash-esp8266\bufferedSerial\buffer\MyBuffer.o
- .text._ZN8MyBufferIhE5clearEv
-                0x00000000       0x2c flash-esp8266\bufferedSerial\buffer\MyBuffer.o
- .ARM.extab.text._ZN8MyBufferIhE5clearEv
-                0x00000000        0x0 flash-esp8266\bufferedSerial\buffer\MyBuffer.o
- .ARM.exidx.text._ZN8MyBufferIhE5clearEv
                 0x00000000        0x8 flash-esp8266\bufferedSerial\buffer\MyBuffer.o
  .text._ZN8MyBufferIhE9availableEv
                 0x00000000       0x28 flash-esp8266\bufferedSerial\buffer\MyBuffer.o
@@ -6464,11 +6446,23 @@ Discarded input sections
                 0x00000000        0x0 flash-esp8266\bufferedSerial\buffer\MyBuffer.o
  .ARM.exidx.text._ZN8MyBufferIxE4peekEc
                 0x00000000        0x8 flash-esp8266\bufferedSerial\buffer\MyBuffer.o
+ .text._ZN8MyBufferIcEC2Em
+                0x00000000       0x34 flash-esp8266\bufferedSerial\buffer\MyBuffer.o
+ .ARM.extab.text._ZN8MyBufferIcEC2Em
+                0x00000000        0xc flash-esp8266\bufferedSerial\buffer\MyBuffer.o
+ .ARM.exidx.text._ZN8MyBufferIcEC2Em
+                0x00000000        0x8 flash-esp8266\bufferedSerial\buffer\MyBuffer.o
  .text._ZN8MyBufferIcE7getSizeEv
                 0x00000000       0x18 flash-esp8266\bufferedSerial\buffer\MyBuffer.o
  .ARM.extab.text._ZN8MyBufferIcE7getSizeEv
                 0x00000000        0x0 flash-esp8266\bufferedSerial\buffer\MyBuffer.o
  .ARM.exidx.text._ZN8MyBufferIcE7getSizeEv
+                0x00000000        0x8 flash-esp8266\bufferedSerial\buffer\MyBuffer.o
+ .text._ZN8MyBufferIcED2Ev
+                0x00000000       0x28 flash-esp8266\bufferedSerial\buffer\MyBuffer.o
+ .ARM.extab.text._ZN8MyBufferIcED2Ev
+                0x00000000        0x0 flash-esp8266\bufferedSerial\buffer\MyBuffer.o
+ .ARM.exidx.text._ZN8MyBufferIcED2Ev
                 0x00000000        0x8 flash-esp8266\bufferedSerial\buffer\MyBuffer.o
  .text._ZN8MyBufferIcE3putEc
                 0x00000000       0x44 flash-esp8266\bufferedSerial\buffer\MyBuffer.o
@@ -6487,6 +6481,12 @@ Discarded input sections
  .ARM.extab.text._ZN8MyBufferIcE4headEv
                 0x00000000        0x0 flash-esp8266\bufferedSerial\buffer\MyBuffer.o
  .ARM.exidx.text._ZN8MyBufferIcE4headEv
+                0x00000000        0x8 flash-esp8266\bufferedSerial\buffer\MyBuffer.o
+ .text._ZN8MyBufferIcE5clearEv
+                0x00000000       0x2c flash-esp8266\bufferedSerial\buffer\MyBuffer.o
+ .ARM.extab.text._ZN8MyBufferIcE5clearEv
+                0x00000000        0x0 flash-esp8266\bufferedSerial\buffer\MyBuffer.o
+ .ARM.exidx.text._ZN8MyBufferIcE5clearEv
                 0x00000000        0x8 flash-esp8266\bufferedSerial\buffer\MyBuffer.o
  .text._ZN8MyBufferIcE9availableEv
                 0x00000000       0x28 flash-esp8266\bufferedSerial\buffer\MyBuffer.o
@@ -7951,486 +7951,486 @@ LOAD c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm
                 0x00001098       0x2c flash-esp8266\bufferedSerial\BufferedSerial.o
                 0x00001098                BufferedSerial::putc(int)
  .text._ZN14BufferedSerial4putsEPKc
-                0x000010c4       0x5c flash-esp8266\bufferedSerial\BufferedSerial.o
+                0x000010c4       0x60 flash-esp8266\bufferedSerial\BufferedSerial.o
                 0x000010c4                BufferedSerial::puts(char const*)
  .text._ZN14BufferedSerial6printfEPKcz
-                0x00001120       0xc0 flash-esp8266\bufferedSerial\BufferedSerial.o
-                0x00001120                BufferedSerial::printf(char const*, ...)
+                0x00001124       0xc0 flash-esp8266\bufferedSerial\BufferedSerial.o
+                0x00001124                BufferedSerial::printf(char const*, ...)
  .text._ZN14BufferedSerial5writeEPKvj
-                0x000011e0       0x5c flash-esp8266\bufferedSerial\BufferedSerial.o
-                0x000011e0                BufferedSerial::write(void const*, unsigned int)
+                0x000011e4       0x60 flash-esp8266\bufferedSerial\BufferedSerial.o
+                0x000011e4                BufferedSerial::write(void const*, unsigned int)
  .text._ZN14BufferedSerial5rxIrqEv
-                0x0000123c       0x48 flash-esp8266\bufferedSerial\BufferedSerial.o
-                0x0000123c                BufferedSerial::rxIrq()
+                0x00001244       0x48 flash-esp8266\bufferedSerial\BufferedSerial.o
+                0x00001244                BufferedSerial::rxIrq()
  .text._ZN14BufferedSerial5txIrqEv
-                0x00001284       0x80 flash-esp8266\bufferedSerial\BufferedSerial.o
-                0x00001284                BufferedSerial::txIrq()
+                0x0000128c       0x80 flash-esp8266\bufferedSerial\BufferedSerial.o
+                0x0000128c                BufferedSerial::txIrq()
  .text._ZN14BufferedSerial5primeEv
-                0x00001304       0x6c flash-esp8266\bufferedSerial\BufferedSerial.o
-                0x00001304                BufferedSerial::prime()
+                0x0000130c       0x6c flash-esp8266\bufferedSerial\BufferedSerial.o
+                0x0000130c                BufferedSerial::prime()
  .text._ZN4mbed10SerialBase6attachI14BufferedSerialEEvPT_MS3_FvvENS0_7IrqTypeE
-                0x00001370       0x38 flash-esp8266\bufferedSerial\BufferedSerial.o
-                0x00001370                void mbed::SerialBase::attach<BufferedSerial>(BufferedSerial*, void (BufferedSerial::*)(), mbed::SerialBase::IrqType)
- .text._ZN8MyBufferIcE9availableEv
-                0x000013a8       0x28 flash-esp8266\bufferedSerial\BufferedSerial.o
-                0x000013a8                MyBuffer<char>::available()
- .text._ZN8MyBufferIcEcviEv
-                0x000013d0       0x18 flash-esp8266\bufferedSerial\BufferedSerial.o
-                0x000013d0                MyBuffer<char>::operator int()
- .text._ZN8MyBufferIcEaSEc
-                0x000013e8       0x24 flash-esp8266\bufferedSerial\BufferedSerial.o
-                0x000013e8                MyBuffer<char>::operator=(char)
- .text._ZN8MyBufferIcE3getEv
-                0x0000140c       0x44 flash-esp8266\bufferedSerial\BufferedSerial.o
-                0x0000140c                MyBuffer<char>::get()
+                0x00001378       0x38 flash-esp8266\bufferedSerial\BufferedSerial.o
+                0x00001378                void mbed::SerialBase::attach<BufferedSerial>(BufferedSerial*, void (BufferedSerial::*)(), mbed::SerialBase::IrqType)
+ .text._ZN8MyBufferIhE9availableEv
+                0x000013b0       0x28 flash-esp8266\bufferedSerial\BufferedSerial.o
+                0x000013b0                MyBuffer<unsigned char>::available()
+ .text._ZN8MyBufferIhEcviEv
+                0x000013d8       0x18 flash-esp8266\bufferedSerial\BufferedSerial.o
+                0x000013d8                MyBuffer<unsigned char>::operator int()
+ .text._ZN8MyBufferIhEaSEh
+                0x000013f0       0x20 flash-esp8266\bufferedSerial\BufferedSerial.o
+                0x000013f0                MyBuffer<unsigned char>::operator=(unsigned char)
+ .text._ZN8MyBufferIhE3getEv
+                0x00001410       0x44 flash-esp8266\bufferedSerial\BufferedSerial.o
+                0x00001410                MyBuffer<unsigned char>::get()
  .text._ZN4mbed8CallbackIFvvEEC2I14BufferedSerialEEPT_MS5_FvvE
-                0x00001450       0x28 flash-esp8266\bufferedSerial\BufferedSerial.o
-                0x00001450                mbed::Callback<void ()>::Callback<BufferedSerial>(BufferedSerial*, void (BufferedSerial::*)())
-                0x00001450                mbed::Callback<void ()>::Callback<BufferedSerial>(BufferedSerial*, void (BufferedSerial::*)())
- .text._ZN8MyBufferIcE3putEc
-                0x00001478       0x44 flash-esp8266\bufferedSerial\BufferedSerial.o
-                0x00001478                MyBuffer<char>::put(char)
+                0x00001454       0x28 flash-esp8266\bufferedSerial\BufferedSerial.o
+                0x00001454                mbed::Callback<void ()>::Callback<BufferedSerial>(BufferedSerial*, void (BufferedSerial::*)())
+                0x00001454                mbed::Callback<void ()>::Callback<BufferedSerial>(BufferedSerial*, void (BufferedSerial::*)())
+ .text._ZN8MyBufferIhE3putEh
+                0x0000147c       0x44 flash-esp8266\bufferedSerial\BufferedSerial.o
+                0x0000147c                MyBuffer<unsigned char>::put(unsigned char)
  .text._ZN4mbed8CallbackIFvvEE6attachI14BufferedSerialEEvPT_MS5_FvvE
-                0x000014bc       0x34 flash-esp8266\bufferedSerial\BufferedSerial.o
-                0x000014bc                void mbed::Callback<void ()>::attach<BufferedSerial>(BufferedSerial*, void (BufferedSerial::*)())
+                0x000014c0       0x34 flash-esp8266\bufferedSerial\BufferedSerial.o
+                0x000014c0                void mbed::Callback<void ()>::attach<BufferedSerial>(BufferedSerial*, void (BufferedSerial::*)())
  .text._ZN4mbed8CallbackIFvvEE12_methodthunkI14BufferedSerialEEvPvS5_
-                0x000014f0       0x48 flash-esp8266\bufferedSerial\BufferedSerial.o
-                0x000014f0                void mbed::Callback<void ()>::_methodthunk<BufferedSerial>(void*, void*)
- .text._ZN8MyBufferIcEC2Em
-                0x00001538       0x34 flash-esp8266\bufferedSerial\buffer\MyBuffer.o
-                0x00001538                MyBuffer<char>::MyBuffer(unsigned long)
-                0x00001538                MyBuffer<char>::MyBuffer(unsigned long)
- .text._ZN8MyBufferIcED2Ev
-                0x0000156c       0x28 flash-esp8266\bufferedSerial\buffer\MyBuffer.o
-                0x0000156c                MyBuffer<char>::~MyBuffer()
-                0x0000156c                MyBuffer<char>::~MyBuffer()
- .text._ZN8MyBufferIcE5clearEv
-                0x00001594       0x2c flash-esp8266\bufferedSerial\buffer\MyBuffer.o
-                0x00001594                MyBuffer<char>::clear()
+                0x000014f4       0x48 flash-esp8266\bufferedSerial\BufferedSerial.o
+                0x000014f4                void mbed::Callback<void ()>::_methodthunk<BufferedSerial>(void*, void*)
+ .text._ZN8MyBufferIhEC2Em
+                0x0000153c       0x34 flash-esp8266\bufferedSerial\buffer\MyBuffer.o
+                0x0000153c                MyBuffer<unsigned char>::MyBuffer(unsigned long)
+                0x0000153c                MyBuffer<unsigned char>::MyBuffer(unsigned long)
+ .text._ZN8MyBufferIhED2Ev
+                0x00001570       0x28 flash-esp8266\bufferedSerial\buffer\MyBuffer.o
+                0x00001570                MyBuffer<unsigned char>::~MyBuffer()
+                0x00001570                MyBuffer<unsigned char>::~MyBuffer()
+ .text._ZN8MyBufferIhE5clearEv
+                0x00001598       0x2c flash-esp8266\bufferedSerial\buffer\MyBuffer.o
+                0x00001598                MyBuffer<unsigned char>::clear()
  .text._ZN4mbed9DigitalIncviEv
-                0x000015c0       0x18 main.o
-                0x000015c0                mbed::DigitalIn::operator int()
+                0x000015c4       0x18 main.o
+                0x000015c4                mbed::DigitalIn::operator int()
  .text._ZN4mbed10DigitalOutaSEi
-                0x000015d8       0x1c main.o
-                0x000015d8                mbed::DigitalOut::operator=(int)
+                0x000015dc       0x1c main.o
+                0x000015dc                mbed::DigitalOut::operator=(int)
  .text._ZN4mbed10DigitalOutcviEv
-                0x000015f4       0x18 main.o
-                0x000015f4                mbed::DigitalOut::operator int()
+                0x000015f8       0x18 main.o
+                0x000015f8                mbed::DigitalOut::operator int()
  .text._ZN10SLIPPacketI14BufferedSerialED2Ev
-                0x0000160c       0x1c main.o
-                0x0000160c                SLIPPacket<BufferedSerial>::~SLIPPacket()
-                0x0000160c                SLIPPacket<BufferedSerial>::~SLIPPacket()
+                0x00001610       0x1c main.o
+                0x00001610                SLIPPacket<BufferedSerial>::~SLIPPacket()
+                0x00001610                SLIPPacket<BufferedSerial>::~SLIPPacket()
  .text._ZN10ESPCommandI14BufferedSerialED2Ev
-                0x00001628       0x1c main.o
-                0x00001628                ESPCommand<BufferedSerial>::~ESPCommand()
-                0x00001628                ESPCommand<BufferedSerial>::~ESPCommand()
- .text.main     0x00001644      0x104 main.o
-                0x00001644                main
+                0x0000162c       0x1c main.o
+                0x0000162c                ESPCommand<BufferedSerial>::~ESPCommand()
+                0x0000162c                ESPCommand<BufferedSerial>::~ESPCommand()
+ .text.main     0x00001648      0x104 main.o
+                0x00001648                main
  .text._ZN10ESPCommandI14BufferedSerialEC2E7PinNameS2_S2_
-                0x00001748       0x54 main.o
-                0x00001748                ESPCommand<BufferedSerial>::ESPCommand(PinName, PinName, PinName)
-                0x00001748                ESPCommand<BufferedSerial>::ESPCommand(PinName, PinName, PinName)
+                0x0000174c       0x54 main.o
+                0x0000174c                ESPCommand<BufferedSerial>::ESPCommand(PinName, PinName, PinName)
+                0x0000174c                ESPCommand<BufferedSerial>::ESPCommand(PinName, PinName, PinName)
  .text._ZN10ESPCommandI14BufferedSerialE11flash_writeEmPKhm
-                0x0000179c       0xf4 main.o
-                0x0000179c                ESPCommand<BufferedSerial>::flash_write(unsigned long, unsigned char const*, unsigned long)
+                0x000017a0       0xf4 main.o
+                0x000017a0                ESPCommand<BufferedSerial>::flash_write(unsigned long, unsigned char const*, unsigned long)
  .text._ZN10SLIPPacketI14BufferedSerialEC2E7PinNameS2_
-                0x00001890       0x34 main.o
-                0x00001890                SLIPPacket<BufferedSerial>::SLIPPacket(PinName, PinName)
-                0x00001890                SLIPPacket<BufferedSerial>::SLIPPacket(PinName, PinName)
+                0x00001894       0x34 main.o
+                0x00001894                SLIPPacket<BufferedSerial>::SLIPPacket(PinName, PinName)
+                0x00001894                SLIPPacket<BufferedSerial>::SLIPPacket(PinName, PinName)
  .text._ZN10ESPCommandI14BufferedSerialE4syncEv
-                0x000018c4       0x20 main.o
-                0x000018c4                ESPCommand<BufferedSerial>::sync()
+                0x000018c8       0x20 main.o
+                0x000018c8                ESPCommand<BufferedSerial>::sync()
  .text._ZN10ESPCommandI14BufferedSerialE11flash_startEmmm
-                0x000018e4       0xa8 main.o
-                0x000018e4                ESPCommand<BufferedSerial>::flash_start(unsigned long, unsigned long, unsigned long)
+                0x000018e8       0xa8 main.o
+                0x000018e8                ESPCommand<BufferedSerial>::flash_start(unsigned long, unsigned long, unsigned long)
  .text._ZN10ESPCommandI14BufferedSerialE10flash_dataEPKhmm
-                0x0000198c       0xe0 main.o
-                0x0000198c                ESPCommand<BufferedSerial>::flash_data(unsigned char const*, unsigned long, unsigned long)
+                0x00001990       0xe0 main.o
+                0x00001990                ESPCommand<BufferedSerial>::flash_data(unsigned char const*, unsigned long, unsigned long)
  .text._ZN10ESPCommandI14BufferedSerialE12flash_finishEv
-                0x00001a6c       0x60 main.o
-                0x00001a6c                ESPCommand<BufferedSerial>::flash_finish()
+                0x00001a70       0x60 main.o
+                0x00001a70                ESPCommand<BufferedSerial>::flash_finish()
  .text._ZN10ESPCommandI14BufferedSerialE10sync_frameEv
-                0x00001acc      0x160 main.o
-                0x00001acc                ESPCommand<BufferedSerial>::sync_frame()
+                0x00001ad0      0x160 main.o
+                0x00001ad0                ESPCommand<BufferedSerial>::sync_frame()
  .text._ZN10ESPCommandI14BufferedSerialE13command_startEct
-                0x00001c2c       0x68 main.o
-                0x00001c2c                ESPCommand<BufferedSerial>::command_start(char, unsigned short)
+                0x00001c30       0x68 main.o
+                0x00001c30                ESPCommand<BufferedSerial>::command_start(char, unsigned short)
  .text._ZN10SLIPPacketI14BufferedSerialE4sendEPKvi
-                0x00001c94       0x4c main.o
-                0x00001c94                SLIPPacket<BufferedSerial>::send(void const*, int)
+                0x00001c98       0x4c main.o
+                0x00001c98                SLIPPacket<BufferedSerial>::send(void const*, int)
  .text._ZN10ESPCommandI14BufferedSerialE14command_finishEv
-                0x00001ce0       0x30 main.o
-                0x00001ce0                ESPCommand<BufferedSerial>::command_finish()
+                0x00001ce4       0x30 main.o
+                0x00001ce4                ESPCommand<BufferedSerial>::command_finish()
  .text._ZN10SLIPPacketI14BufferedSerialE5flushEv
-                0x00001d10       0x34 main.o
-                0x00001d10                SLIPPacket<BufferedSerial>::flush()
+                0x00001d14       0x34 main.o
+                0x00001d14                SLIPPacket<BufferedSerial>::flush()
  .text._ZN10SLIPPacketI14BufferedSerialE4putcEh
-                0x00001d44       0x78 main.o
-                0x00001d44                SLIPPacket<BufferedSerial>::putc(unsigned char)
+                0x00001d48       0x78 main.o
+                0x00001d48                SLIPPacket<BufferedSerial>::putc(unsigned char)
  .text._ZN10ESPCommandI14BufferedSerialE13command_flushEv
-                0x00001dbc       0x94 main.o
-                0x00001dbc                ESPCommand<BufferedSerial>::command_flush()
+                0x00001dc0       0x94 main.o
+                0x00001dc0                ESPCommand<BufferedSerial>::command_flush()
  .text._ZN10SLIPPacketI14BufferedSerialE9req_startEv
-                0x00001e50       0x20 main.o
-                0x00001e50                SLIPPacket<BufferedSerial>::req_start()
+                0x00001e54       0x20 main.o
+                0x00001e54                SLIPPacket<BufferedSerial>::req_start()
  .text._ZN10SLIPPacketI14BufferedSerialE10req_finishEv
-                0x00001e70       0x20 main.o
-                0x00001e70                SLIPPacket<BufferedSerial>::req_finish()
+                0x00001e74       0x20 main.o
+                0x00001e74                SLIPPacket<BufferedSerial>::req_finish()
  .text._ZN10SLIPPacketI14BufferedSerialE9checkputcEh
-                0x00001e90       0x44 main.o
-                0x00001e90                SLIPPacket<BufferedSerial>::checkputc(unsigned char)
+                0x00001e94       0x44 main.o
+                0x00001e94                SLIPPacket<BufferedSerial>::checkputc(unsigned char)
  .text._ZN10SLIPPacketI14BufferedSerialE10resp_startEv
-                0x00001ed4       0x24 main.o
-                0x00001ed4                SLIPPacket<BufferedSerial>::resp_start()
+                0x00001ed8       0x24 main.o
+                0x00001ed8                SLIPPacket<BufferedSerial>::resp_start()
  .text._ZN10SLIPPacketI14BufferedSerialE4getcEv
-                0x00001ef8       0x50 main.o
-                0x00001ef8                SLIPPacket<BufferedSerial>::getc()
+                0x00001efc       0x50 main.o
+                0x00001efc                SLIPPacket<BufferedSerial>::getc()
  .text._ZN10SLIPPacketI14BufferedSerialE4recvEPvi
-                0x00001f48       0x50 main.o
-                0x00001f48                SLIPPacket<BufferedSerial>::recv(void*, int)
+                0x00001f4c       0x50 main.o
+                0x00001f4c                SLIPPacket<BufferedSerial>::recv(void*, int)
  .text._ZN10SLIPPacketI14BufferedSerialE11resp_finishEv
-                0x00001f98       0x24 main.o
-                0x00001f98                SLIPPacket<BufferedSerial>::resp_finish()
+                0x00001f9c       0x24 main.o
+                0x00001f9c                SLIPPacket<BufferedSerial>::resp_finish()
  .text._ZN10SLIPPacketI14BufferedSerialE9checkgetcEv
-                0x00001fbc       0x70 main.o
-                0x00001fbc                SLIPPacket<BufferedSerial>::checkgetc()
+                0x00001fc0       0x70 main.o
+                0x00001fc0                SLIPPacket<BufferedSerial>::checkgetc()
  .text.NVIC_SetVector
-                0x0000202c       0x74 target\cmsis\cmsis_nvic.o
-                0x0000202c                NVIC_SetVector
+                0x00002030       0x74 target\cmsis\cmsis_nvic.o
+                0x00002030                NVIC_SetVector
  .text.rst_handler
-                0x000020a0       0x70 target\cmsis\startup_tiva.o
-                0x000020a0                rst_handler
+                0x000020a4       0x70 target\cmsis\startup_tiva.o
+                0x000020a4                rst_handler
  .text.nmi_handler
-                0x00002110        0x8 target\cmsis\startup_tiva.o
-                0x00002110                nmi_handler
+                0x00002114        0x8 target\cmsis\startup_tiva.o
+                0x00002114                nmi_handler
  .text.hardfault_handler
-                0x00002118        0x8 target\cmsis\startup_tiva.o
-                0x00002118                hardfault_handler
+                0x0000211c        0x8 target\cmsis\startup_tiva.o
+                0x0000211c                hardfault_handler
  .text.empty_def_handler
-                0x00002120        0x8 target\cmsis\startup_tiva.o
-                0x00002120                empty_def_handler
+                0x00002124        0x8 target\cmsis\startup_tiva.o
+                0x00002124                empty_def_handler
  .text.TIMERA_handler
-                0x00002128       0x10 target\cmsis\startup_tiva.o
-                0x00002128                TIMERA_handler
+                0x0000212c       0x10 target\cmsis\startup_tiva.o
+                0x0000212c                TIMERA_handler
  .text.SystemInit
-                0x00002138       0xbc target\cmsis\system_LM4F.o
-                0x00002138                SystemInit
+                0x0000213c       0xbc target\cmsis\system_LM4F.o
+                0x0000213c                SystemInit
  .text.gpio_init
-                0x000021f4       0xf4 target\hal\TARGET_TivaC\gpio_api.o
-                0x000021f4                gpio_init
+                0x000021f8       0xf4 target\hal\TARGET_TivaC\gpio_api.o
+                0x000021f8                gpio_init
  .text.gpio_write
-                0x000022e8      0x1a4 target\hal\TARGET_TivaC\gpio_api.o
-                0x000022e8                gpio_write
+                0x000022ec      0x1a4 target\hal\TARGET_TivaC\gpio_api.o
+                0x000022ec                gpio_write
  .text.gpio_dir
-                0x0000248c      0x290 target\hal\TARGET_TivaC\gpio_api.o
-                0x0000248c                gpio_dir
+                0x00002490      0x290 target\hal\TARGET_TivaC\gpio_api.o
+                0x00002490                gpio_dir
  .text.gpio_mode
-                0x0000271c      0x3b0 target\hal\TARGET_TivaC\gpio_api.o
-                0x0000271c                gpio_mode
+                0x00002720      0x3b0 target\hal\TARGET_TivaC\gpio_api.o
+                0x00002720                gpio_mode
  .text.gpio_read
-                0x00002acc       0xc4 target\hal\TARGET_TivaC\gpio_api.o
-                0x00002acc                gpio_read
+                0x00002ad0       0xc4 target\hal\TARGET_TivaC\gpio_api.o
+                0x00002ad0                gpio_read
  .text.getPortNameForPin
-                0x00002b90      0x310 target\hal\TARGET_TivaC\gpio_api.o
+                0x00002b94      0x310 target\hal\TARGET_TivaC\gpio_api.o
  .text.getPinValue
-                0x00002ea0      0x1a0 target\hal\TARGET_TivaC\gpio_api.o
-                0x00002ea0                getPinValue
+                0x00002ea4      0x1a0 target\hal\TARGET_TivaC\gpio_api.o
+                0x00002ea4                getPinValue
  .text.NVIC_EnableIRQ
-                0x00003040       0x34 target\hal\TARGET_TivaC\serial_api.o
+                0x00003044       0x34 target\hal\TARGET_TivaC\serial_api.o
  .text.NVIC_DisableIRQ
-                0x00003074       0x34 target\hal\TARGET_TivaC\serial_api.o
+                0x00003078       0x34 target\hal\TARGET_TivaC\serial_api.o
  .text.serial_init
-                0x000030a8      0x1d0 target\hal\TARGET_TivaC\serial_api.o
-                0x000030a8                serial_init
+                0x000030ac      0x1d0 target\hal\TARGET_TivaC\serial_api.o
+                0x000030ac                serial_init
  .text.serial_irq_set
-                0x00003278      0x128 target\hal\TARGET_TivaC\serial_api.o
-                0x00003278                serial_irq_set
+                0x0000327c      0x128 target\hal\TARGET_TivaC\serial_api.o
+                0x0000327c                serial_irq_set
  .text.serial_irq_handler
-                0x000033a0       0x34 target\hal\TARGET_TivaC\serial_api.o
-                0x000033a0                serial_irq_handler
+                0x000033a4       0x34 target\hal\TARGET_TivaC\serial_api.o
+                0x000033a4                serial_irq_handler
  .text.serial_getc
-                0x000033d4       0x2c target\hal\TARGET_TivaC\serial_api.o
-                0x000033d4                serial_getc
+                0x000033d8       0x2c target\hal\TARGET_TivaC\serial_api.o
+                0x000033d8                serial_getc
  .text.serial_putc
-                0x00003400       0x2c target\hal\TARGET_TivaC\serial_api.o
-                0x00003400                serial_putc
+                0x00003404       0x2c target\hal\TARGET_TivaC\serial_api.o
+                0x00003404                serial_putc
  .text.serial_readable
-                0x0000342c       0x3c target\hal\TARGET_TivaC\serial_api.o
-                0x0000342c                serial_readable
+                0x00003430       0x3c target\hal\TARGET_TivaC\serial_api.o
+                0x00003430                serial_readable
  .text.serial_writable
-                0x00003468       0x3c target\hal\TARGET_TivaC\serial_api.o
-                0x00003468                serial_writable
+                0x0000346c       0x3c target\hal\TARGET_TivaC\serial_api.o
+                0x0000346c                serial_writable
  .text.serial_baud
-                0x000034a4       0x4c target\hal\TARGET_TivaC\serial_api.o
-                0x000034a4                serial_baud
+                0x000034a8       0x4c target\hal\TARGET_TivaC\serial_api.o
+                0x000034a8                serial_baud
  .text.getUartParam
-                0x000034f0      0x1b8 target\hal\TARGET_TivaC\serial_api.o
+                0x000034f4      0x1b8 target\hal\TARGET_TivaC\serial_api.o
  .text.uart_irq
-                0x000036a8       0x7c target\hal\TARGET_TivaC\serial_api.o
+                0x000036ac       0x7c target\hal\TARGET_TivaC\serial_api.o
  .text.UART0_Irq
-                0x00003724       0x20 target\hal\TARGET_TivaC\serial_api.o
+                0x00003728       0x20 target\hal\TARGET_TivaC\serial_api.o
  .text.UART1_Irq
-                0x00003744       0x20 target\hal\TARGET_TivaC\serial_api.o
+                0x00003748       0x20 target\hal\TARGET_TivaC\serial_api.o
  .text.UART2_Irq
-                0x00003764       0x20 target\hal\TARGET_TivaC\serial_api.o
+                0x00003768       0x20 target\hal\TARGET_TivaC\serial_api.o
  .text.UART3_Irq
-                0x00003784       0x20 target\hal\TARGET_TivaC\serial_api.o
+                0x00003788       0x20 target\hal\TARGET_TivaC\serial_api.o
  .text.UART4_Irq
-                0x000037a4       0x20 target\hal\TARGET_TivaC\serial_api.o
+                0x000037a8       0x20 target\hal\TARGET_TivaC\serial_api.o
  .text.UART5_Irq
-                0x000037c4       0x20 target\hal\TARGET_TivaC\serial_api.o
+                0x000037c8       0x20 target\hal\TARGET_TivaC\serial_api.o
  .text.UART6_Irq
-                0x000037e4       0x20 target\hal\TARGET_TivaC\serial_api.o
+                0x000037e8       0x20 target\hal\TARGET_TivaC\serial_api.o
  .text.UART7_Irq
-                0x00003804       0x20 target\hal\TARGET_TivaC\serial_api.o
+                0x00003808       0x20 target\hal\TARGET_TivaC\serial_api.o
  .text.UART0_Init
-                0x00003824       0x90 target\hal\TARGET_TivaC\serial_api.o
+                0x00003828       0x90 target\hal\TARGET_TivaC\serial_api.o
  .text.UART1_Init
-                0x000038b4       0x84 target\hal\TARGET_TivaC\serial_api.o
+                0x000038b8       0x84 target\hal\TARGET_TivaC\serial_api.o
  .text.UART2_Init
-                0x00003938       0x84 target\hal\TARGET_TivaC\serial_api.o
+                0x0000393c       0x84 target\hal\TARGET_TivaC\serial_api.o
  .text.UART3_Init
-                0x000039bc       0x84 target\hal\TARGET_TivaC\serial_api.o
+                0x000039c0       0x84 target\hal\TARGET_TivaC\serial_api.o
  .text.UART4_Init
-                0x00003a40       0x84 target\hal\TARGET_TivaC\serial_api.o
+                0x00003a44       0x84 target\hal\TARGET_TivaC\serial_api.o
  .text.UART5_Init
-                0x00003ac4       0x84 target\hal\TARGET_TivaC\serial_api.o
+                0x00003ac8       0x84 target\hal\TARGET_TivaC\serial_api.o
  .text.UART6_Init
-                0x00003b48       0x84 target\hal\TARGET_TivaC\serial_api.o
+                0x00003b4c       0x84 target\hal\TARGET_TivaC\serial_api.o
  .text.UART7_Init
-                0x00003bcc       0x84 target\hal\TARGET_TivaC\serial_api.o
+                0x00003bd0       0x84 target\hal\TARGET_TivaC\serial_api.o
  .text.NVIC_EnableIRQ
-                0x00003c50       0x34 target\hal\TARGET_TivaC\us_ticker.o
+                0x00003c54       0x34 target\hal\TARGET_TivaC\us_ticker.o
  .text.NVIC_ClearPendingIRQ
-                0x00003c84       0x34 target\hal\TARGET_TivaC\us_ticker.o
+                0x00003c88       0x34 target\hal\TARGET_TivaC\us_ticker.o
  .text.us_ticker_init
-                0x00003cb8       0x68 target\hal\TARGET_TivaC\us_ticker.o
-                0x00003cb8                us_ticker_init
+                0x00003cbc       0x68 target\hal\TARGET_TivaC\us_ticker.o
+                0x00003cbc                us_ticker_init
  .text.us_ticker_read
-                0x00003d20       0x3c target\hal\TARGET_TivaC\us_ticker.o
-                0x00003d20                us_ticker_read
+                0x00003d24       0x3c target\hal\TARGET_TivaC\us_ticker.o
+                0x00003d24                us_ticker_read
  .text.us_ticker_disable_interrupt
-                0x00003d5c       0x20 target\hal\TARGET_TivaC\us_ticker.o
-                0x00003d5c                us_ticker_disable_interrupt
+                0x00003d60       0x20 target\hal\TARGET_TivaC\us_ticker.o
+                0x00003d60                us_ticker_disable_interrupt
  .text.us_ticker_clear_interrupt
-                0x00003d7c       0x18 target\hal\TARGET_TivaC\us_ticker.o
-                0x00003d7c                us_ticker_clear_interrupt
+                0x00003d80       0x18 target\hal\TARGET_TivaC\us_ticker.o
+                0x00003d80                us_ticker_clear_interrupt
  .text.us_ticker_set_interrupt
-                0x00003d94       0x28 target\hal\TARGET_TivaC\us_ticker.o
-                0x00003d94                us_ticker_set_interrupt
- .text._ZdaPv   0x00003dbc        0x4 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(del_opv.o)
-                0x00003dbc                operator delete[](void*)
- .text._ZdlPv   0x00003dc0        0x4 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(del_op.o)
-                0x00003dc0                operator delete(void*)
+                0x00003d98       0x28 target\hal\TARGET_TivaC\us_ticker.o
+                0x00003d98                us_ticker_set_interrupt
+ .text._ZdaPv   0x00003dc0        0x4 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(del_opv.o)
+                0x00003dc0                operator delete[](void*)
+ .text._ZdlPv   0x00003dc4        0x4 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(del_op.o)
+                0x00003dc4                operator delete(void*)
  .text._ZN10__cxxabiv120__si_class_type_infoD2Ev
-                0x00003dc4       0x14 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(si_class_type_info.o)
-                0x00003dc4                __cxxabiv1::__si_class_type_info::~__si_class_type_info()
-                0x00003dc4                __cxxabiv1::__si_class_type_info::~__si_class_type_info()
+                0x00003dc8       0x14 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(si_class_type_info.o)
+                0x00003dc8                __cxxabiv1::__si_class_type_info::~__si_class_type_info()
+                0x00003dc8                __cxxabiv1::__si_class_type_info::~__si_class_type_info()
  .text._ZN10__cxxabiv120__si_class_type_infoD0Ev
-                0x00003dd8       0x12 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(si_class_type_info.o)
-                0x00003dd8                __cxxabiv1::__si_class_type_info::~__si_class_type_info()
+                0x00003ddc       0x12 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(si_class_type_info.o)
+                0x00003ddc                __cxxabiv1::__si_class_type_info::~__si_class_type_info()
  .text._ZNK10__cxxabiv120__si_class_type_info12__do_dyncastEiNS_17__class_type_info10__sub_kindEPKS1_PKvS4_S6_RNS1_16__dyncast_resultE
-                0x00003dea       0x7c c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(si_class_type_info.o)
-                0x00003dea                __cxxabiv1::__si_class_type_info::__do_dyncast(int, __cxxabiv1::__class_type_info::__sub_kind, __cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info::__dyncast_result&) const
+                0x00003dee       0x7c c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(si_class_type_info.o)
+                0x00003dee                __cxxabiv1::__si_class_type_info::__do_dyncast(int, __cxxabiv1::__class_type_info::__sub_kind, __cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info::__dyncast_result&) const
  .text._ZNK10__cxxabiv120__si_class_type_info20__do_find_public_srcEiPKvPKNS_17__class_type_infoES2_
-                0x00003e66       0x38 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(si_class_type_info.o)
-                0x00003e66                __cxxabiv1::__si_class_type_info::__do_find_public_src(int, void const*, __cxxabiv1::__class_type_info const*, void const*) const
+                0x00003e6a       0x38 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(si_class_type_info.o)
+                0x00003e6a                __cxxabiv1::__si_class_type_info::__do_find_public_src(int, void const*, __cxxabiv1::__class_type_info const*, void const*) const
  .text._ZNK10__cxxabiv120__si_class_type_info11__do_upcastEPKNS_17__class_type_infoEPKvRNS1_15__upcast_resultE
-                0x00003e9e       0x2a c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(si_class_type_info.o)
-                0x00003e9e                __cxxabiv1::__si_class_type_info::__do_upcast(__cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info::__upcast_result&) const
+                0x00003ea2       0x2a c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(si_class_type_info.o)
+                0x00003ea2                __cxxabiv1::__si_class_type_info::__do_upcast(__cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info::__upcast_result&) const
  .text._ZL12read_uleb128PKhPm
-                0x00003ec8       0x22 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(eh_personality.o)
+                0x00003ecc       0x22 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(eh_personality.o)
  .text._ZL12read_sleb128PKhPl
-                0x00003eea       0x30 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(eh_personality.o)
+                0x00003eee       0x30 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(eh_personality.o)
  .text._ZL28read_encoded_value_with_basehjPKhPj
-                0x00003f1a       0x88 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(eh_personality.o)
+                0x00003f1e       0x88 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(eh_personality.o)
  .text._ZL21base_of_encoded_valuehP15_Unwind_Context
-                0x00003fa2       0x48 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(eh_personality.o)
+                0x00003fa6       0x48 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(eh_personality.o)
  .text._ZL18read_encoded_valueP15_Unwind_ContexthPKhPj
-                0x00003fea       0x20 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(eh_personality.o)
+                0x00003fee       0x20 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(eh_personality.o)
  .text._ZL17parse_lsda_headerP15_Unwind_ContextPKhP16lsda_header_info
-                0x0000400a       0x60 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(eh_personality.o)
+                0x0000400e       0x60 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(eh_personality.o)
  .text._Unwind_GetGR
-                0x0000406a       0x18 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(eh_personality.o)
- *fill*         0x00004082        0x2 
+                0x0000406e       0x18 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(eh_personality.o)
+ *fill*         0x00004086        0x2 
  .text.__gxx_personality_v0
-                0x00004084      0x378 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(eh_personality.o)
-                0x00004084                __gxx_personality_v0
- .text._Znwj    0x000043fc       0x22 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(new_op.o)
-                0x000043fc                operator new(unsigned int)
- .text._Znaj    0x0000441e        0x4 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(new_opv.o)
-                0x0000441e                operator new[](unsigned int)
+                0x00004088      0x378 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(eh_personality.o)
+                0x00004088                __gxx_personality_v0
+ .text._Znwj    0x00004400       0x22 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(new_op.o)
+                0x00004400                operator new(unsigned int)
+ .text._Znaj    0x00004422        0x4 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(new_opv.o)
+                0x00004422                operator new[](unsigned int)
  .text._ZN10__cxxabiv111__terminateEPFvvE
-                0x00004422        0x8 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(eh_terminate.o)
-                0x00004422                __cxxabiv1::__terminate(void (*)())
- *fill*         0x0000442a        0x2 
+                0x00004426        0x8 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(eh_terminate.o)
+                0x00004426                __cxxabiv1::__terminate(void (*)())
+ *fill*         0x0000442e        0x2 
  .text._ZSt13get_terminatev
-                0x0000442c       0x10 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(eh_terminate.o)
-                0x0000442c                std::get_terminate()
+                0x00004430       0x10 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(eh_terminate.o)
+                0x00004430                std::get_terminate()
  .text._ZSt9terminatev
-                0x0000443c        0xa c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(eh_terminate.o)
-                0x0000443c                std::terminate()
+                0x00004440        0xa c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(eh_terminate.o)
+                0x00004440                std::terminate()
  .text._ZN10__cxxabiv112__unexpectedEPFvvE
-                0x00004446        0x8 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(eh_terminate.o)
-                0x00004446                __cxxabiv1::__unexpected(void (*)())
- *fill*         0x0000444e        0x2 
+                0x0000444a        0x8 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(eh_terminate.o)
+                0x0000444a                __cxxabiv1::__unexpected(void (*)())
+ *fill*         0x00004452        0x2 
  .text._ZSt14get_unexpectedv
-                0x00004450       0x10 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(eh_terminate.o)
-                0x00004450                std::get_unexpected()
+                0x00004454       0x10 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(eh_terminate.o)
+                0x00004454                std::get_unexpected()
  .text._ZSt10unexpectedv
-                0x00004460        0xa c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(eh_terminate.o)
-                0x00004460                std::unexpected()
+                0x00004464        0xa c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(eh_terminate.o)
+                0x00004464                std::unexpected()
  .text._ZNSt9type_infoD2Ev
-                0x0000446a        0x2 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(tinfo.o)
-                0x0000446a                std::type_info::~type_info()
-                0x0000446a                std::type_info::~type_info()
+                0x0000446e        0x2 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(tinfo.o)
+                0x0000446e                std::type_info::~type_info()
+                0x0000446e                std::type_info::~type_info()
  .text._ZNKSt9type_info15__is_function_pEv
-                0x0000446c        0x4 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(tinfo.o)
-                0x0000446c                std::type_info::__is_pointer_p() const
-                0x0000446c                std::type_info::__is_function_p() const
+                0x00004470        0x4 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(tinfo.o)
+                0x00004470                std::type_info::__is_pointer_p() const
+                0x00004470                std::type_info::__is_function_p() const
  .text._ZNKSt9type_infoeqERKS_
-                0x00004470       0x2c c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(tinfo.o)
-                0x00004470                std::type_info::operator==(std::type_info const&) const
+                0x00004474       0x2c c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(tinfo.o)
+                0x00004474                std::type_info::operator==(std::type_info const&) const
  .text.__cxa_end_cleanup
-                0x0000449c        0xc c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(eh_arm.o)
-                0x0000449c                __cxa_end_cleanup
+                0x000044a0        0xc c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(eh_arm.o)
+                0x000044a0                __cxa_end_cleanup
  .text._ZN10__cxxabiv1L24__is_gxx_exception_classEPc
-                0x000044a8       0x3a c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(eh_arm.o)
- *fill*         0x000044e2        0x2 
+                0x000044ac       0x3a c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(eh_arm.o)
+ *fill*         0x000044e6        0x2 
  .text.__cxa_type_match
-                0x000044e4       0xbc c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(eh_arm.o)
-                0x000044e4                __cxa_type_match
+                0x000044e8       0xbc c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(eh_arm.o)
+                0x000044e8                __cxa_type_match
  .text.__cxa_begin_cleanup
-                0x000045a0       0x3a c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(eh_arm.o)
-                0x000045a0                __cxa_begin_cleanup
+                0x000045a4       0x3a c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(eh_arm.o)
+                0x000045a4                __cxa_begin_cleanup
  .text.__gnu_end_cleanup
-                0x000045da       0x32 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(eh_arm.o)
-                0x000045da                __gnu_end_cleanup
+                0x000045de       0x32 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(eh_arm.o)
+                0x000045de                __gnu_end_cleanup
  .text._ZNK10__cxxabiv117__class_type_info11__do_upcastEPKS0_PPv
-                0x0000460c       0x34 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(class_type_info.o)
-                0x0000460c                __cxxabiv1::__class_type_info::__do_upcast(__cxxabiv1::__class_type_info const*, void**) const
+                0x00004610       0x34 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(class_type_info.o)
+                0x00004610                __cxxabiv1::__class_type_info::__do_upcast(__cxxabiv1::__class_type_info const*, void**) const
  .text._ZNK10__cxxabiv117__class_type_info20__do_find_public_srcEiPKvPKS0_S2_
-                0x00004640        0xc c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(class_type_info.o)
-                0x00004640                __cxxabiv1::__class_type_info::__do_find_public_src(int, void const*, __cxxabiv1::__class_type_info const*, void const*) const
+                0x00004644        0xc c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(class_type_info.o)
+                0x00004644                __cxxabiv1::__class_type_info::__do_find_public_src(int, void const*, __cxxabiv1::__class_type_info const*, void const*) const
  .text._ZN10__cxxabiv117__class_type_infoD2Ev
-                0x0000464c       0x14 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(class_type_info.o)
-                0x0000464c                __cxxabiv1::__class_type_info::~__class_type_info()
-                0x0000464c                __cxxabiv1::__class_type_info::~__class_type_info()
+                0x00004650       0x14 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(class_type_info.o)
+                0x00004650                __cxxabiv1::__class_type_info::~__class_type_info()
+                0x00004650                __cxxabiv1::__class_type_info::~__class_type_info()
  .text._ZN10__cxxabiv117__class_type_infoD0Ev
-                0x00004660       0x12 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(class_type_info.o)
-                0x00004660                __cxxabiv1::__class_type_info::~__class_type_info()
+                0x00004664       0x12 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(class_type_info.o)
+                0x00004664                __cxxabiv1::__class_type_info::~__class_type_info()
  .text._ZNK10__cxxabiv117__class_type_info11__do_upcastEPKS0_PKvRNS0_15__upcast_resultE
-                0x00004672       0x18 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(class_type_info.o)
-                0x00004672                __cxxabiv1::__class_type_info::__do_upcast(__cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info::__upcast_result&) const
+                0x00004676       0x18 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(class_type_info.o)
+                0x00004676                __cxxabiv1::__class_type_info::__do_upcast(__cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info::__upcast_result&) const
  .text._ZNK10__cxxabiv117__class_type_info12__do_dyncastEiNS0_10__sub_kindEPKS0_PKvS3_S5_RNS0_16__dyncast_resultE
-                0x0000468a       0x38 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(class_type_info.o)
-                0x0000468a                __cxxabiv1::__class_type_info::__do_dyncast(int, __cxxabiv1::__class_type_info::__sub_kind, __cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info::__dyncast_result&) const
+                0x0000468e       0x38 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(class_type_info.o)
+                0x0000468e                __cxxabiv1::__class_type_info::__do_dyncast(int, __cxxabiv1::__class_type_info::__sub_kind, __cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info::__dyncast_result&) const
  .text._ZNK10__cxxabiv117__class_type_info10__do_catchEPKSt9type_infoPPvj
-                0x000046c2       0x2a c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(class_type_info.o)
-                0x000046c2                __cxxabiv1::__class_type_info::__do_catch(std::type_info const*, void**, unsigned int) const
+                0x000046c6       0x2a c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(class_type_info.o)
+                0x000046c6                __cxxabiv1::__class_type_info::__do_catch(std::type_info const*, void**, unsigned int) const
  .text._ZN10__cxxabiv1L24__is_gxx_exception_classEPc
-                0x000046ec       0x3a c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(eh_call.o)
+                0x000046f0       0x3a c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(eh_call.o)
  .text.__cxa_call_terminate
-                0x00004726       0x1e c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(eh_call.o)
-                0x00004726                __cxa_call_terminate
+                0x0000472a       0x1e c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(eh_call.o)
+                0x0000472a                __cxa_call_terminate
  .text.__cxa_call_unexpected
-                0x00004744       0x28 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(eh_call.o)
-                0x00004744                __cxa_call_unexpected
+                0x00004748       0x28 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(eh_call.o)
+                0x00004748                __cxa_call_unexpected
  .text._ZSt15get_new_handlerv
-                0x0000476c       0x10 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(new_handler.o)
-                0x0000476c                std::get_new_handler()
+                0x00004770       0x10 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(new_handler.o)
+                0x00004770                std::get_new_handler()
  .text._ZN10__cxxabiv1L24__is_gxx_exception_classEPc
-                0x0000477c       0x3a c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(eh_catch.o)
+                0x00004780       0x3a c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(eh_catch.o)
  .text.__cxa_begin_catch
-                0x000047b6       0x54 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(eh_catch.o)
-                0x000047b6                __cxa_begin_catch
- *fill*         0x0000480a        0x2 
+                0x000047ba       0x54 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(eh_catch.o)
+                0x000047ba                __cxa_begin_catch
+ *fill*         0x0000480e        0x2 
  .text.__cxa_get_globals
-                0x0000480c        0x8 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(eh_globals.o)
-                0x0000480c                __cxa_get_globals
- .text          0x00004814      0x9dc c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/softfp\libgcc.a(unwind-arm.o)
-                0x00004ad0                _Unwind_GetCFA
-                0x00004ad4                __gnu_Unwind_RaiseException
-                0x00004b34                __gnu_Unwind_ForcedUnwind
-                0x00004b48                __gnu_Unwind_Resume
-                0x00004b8c                __gnu_Unwind_Resume_or_Rethrow
-                0x00004b9c                _Unwind_Complete
-                0x00004ba0                _Unwind_DeleteException
-                0x00004bac                _Unwind_VRS_Get
-                0x00004bf8                _Unwind_VRS_Set
-                0x00004c48                __gnu_Unwind_Backtrace
-                0x00004f94                __aeabi_unwind_cpp_pr0
-                0x00004f98                __aeabi_unwind_cpp_pr1
-                0x00004f9c                __aeabi_unwind_cpp_pr2
-                0x00004fa0                _Unwind_VRS_Pop
- .text          0x000051f0      0x1ac c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/softfp\libgcc.a(libunwind.o)
-                0x000051f0                __restore_core_regs
-                0x000051f0                restore_core_regs
-                0x00005208                __gnu_Unwind_Restore_VFP
-                0x00005210                __gnu_Unwind_Save_VFP
-                0x00005218                __gnu_Unwind_Restore_VFP_D
-                0x00005220                __gnu_Unwind_Save_VFP_D
-                0x00005228                __gnu_Unwind_Restore_VFP_D_16_to_31
-                0x00005230                __gnu_Unwind_Save_VFP_D_16_to_31
-                0x00005238                __gnu_Unwind_Restore_WMMXD
-                0x0000527c                __gnu_Unwind_Save_WMMXD
-                0x000052c0                __gnu_Unwind_Restore_WMMXC
-                0x000052d4                __gnu_Unwind_Save_WMMXC
-                0x000052e8                ___Unwind_RaiseException
-                0x000052e8                _Unwind_RaiseException
-                0x0000530c                _Unwind_Resume
-                0x0000530c                ___Unwind_Resume
-                0x00005330                _Unwind_Resume_or_Rethrow
-                0x00005330                ___Unwind_Resume_or_Rethrow
-                0x00005354                _Unwind_ForcedUnwind
-                0x00005354                ___Unwind_ForcedUnwind
-                0x00005378                ___Unwind_Backtrace
-                0x00005378                _Unwind_Backtrace
- .text          0x0000539c      0x354 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/softfp\libgcc.a(pr-support.o)
-                0x000053f4                __gnu_unwind_execute
-                0x00005698                __gnu_unwind_frame
-                0x000056c0                _Unwind_GetRegionStart
-                0x000056cc                _Unwind_GetLanguageSpecificData
-                0x000056e0                _Unwind_GetTextRelBase
-                0x000056e8                _Unwind_GetDataRelBase
- .text.abort    0x000056f0        0xe c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-abort.o)
-                0x000056f0                abort
- *fill*         0x000056fe        0x2 
- .text.__errno  0x00005700        0xc c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-errno.o)
-                0x00005700                __errno
+                0x00004810        0x8 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libstdc++_nano.a(eh_globals.o)
+                0x00004810                __cxa_get_globals
+ .text          0x00004818      0x9dc c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/softfp\libgcc.a(unwind-arm.o)
+                0x00004ad4                _Unwind_GetCFA
+                0x00004ad8                __gnu_Unwind_RaiseException
+                0x00004b38                __gnu_Unwind_ForcedUnwind
+                0x00004b4c                __gnu_Unwind_Resume
+                0x00004b90                __gnu_Unwind_Resume_or_Rethrow
+                0x00004ba0                _Unwind_Complete
+                0x00004ba4                _Unwind_DeleteException
+                0x00004bb0                _Unwind_VRS_Get
+                0x00004bfc                _Unwind_VRS_Set
+                0x00004c4c                __gnu_Unwind_Backtrace
+                0x00004f98                __aeabi_unwind_cpp_pr0
+                0x00004f9c                __aeabi_unwind_cpp_pr1
+                0x00004fa0                __aeabi_unwind_cpp_pr2
+                0x00004fa4                _Unwind_VRS_Pop
+ .text          0x000051f4      0x1ac c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/softfp\libgcc.a(libunwind.o)
+                0x000051f4                __restore_core_regs
+                0x000051f4                restore_core_regs
+                0x0000520c                __gnu_Unwind_Restore_VFP
+                0x00005214                __gnu_Unwind_Save_VFP
+                0x0000521c                __gnu_Unwind_Restore_VFP_D
+                0x00005224                __gnu_Unwind_Save_VFP_D
+                0x0000522c                __gnu_Unwind_Restore_VFP_D_16_to_31
+                0x00005234                __gnu_Unwind_Save_VFP_D_16_to_31
+                0x0000523c                __gnu_Unwind_Restore_WMMXD
+                0x00005280                __gnu_Unwind_Save_WMMXD
+                0x000052c4                __gnu_Unwind_Restore_WMMXC
+                0x000052d8                __gnu_Unwind_Save_WMMXC
+                0x000052ec                ___Unwind_RaiseException
+                0x000052ec                _Unwind_RaiseException
+                0x00005310                _Unwind_Resume
+                0x00005310                ___Unwind_Resume
+                0x00005334                _Unwind_Resume_or_Rethrow
+                0x00005334                ___Unwind_Resume_or_Rethrow
+                0x00005358                _Unwind_ForcedUnwind
+                0x00005358                ___Unwind_ForcedUnwind
+                0x0000537c                ___Unwind_Backtrace
+                0x0000537c                _Unwind_Backtrace
+ .text          0x000053a0      0x354 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7e-m/softfp\libgcc.a(pr-support.o)
+                0x000053f8                __gnu_unwind_execute
+                0x0000569c                __gnu_unwind_frame
+                0x000056c4                _Unwind_GetRegionStart
+                0x000056d0                _Unwind_GetLanguageSpecificData
+                0x000056e4                _Unwind_GetTextRelBase
+                0x000056ec                _Unwind_GetDataRelBase
+ .text.abort    0x000056f4        0xe c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-abort.o)
+                0x000056f4                abort
+ *fill*         0x00005702        0x2 
+ .text.__errno  0x00005704        0xc c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-errno.o)
+                0x00005704                __errno
  .text.__sflush_r
-                0x0000570c      0x110 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-fflush.o)
-                0x0000570c                __sflush_r
+                0x00005710      0x110 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-fflush.o)
+                0x00005710                __sflush_r
  .text._fflush_r
-                0x0000581c       0x54 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-fflush.o)
-                0x0000581c                _fflush_r
+                0x00005820       0x54 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-fflush.o)
+                0x00005820                _fflush_r
  .text._cleanup_r
-                0x00005870        0xc c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-findfp.o)
-                0x00005870                _cleanup_r
+                0x00005874        0xc c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-findfp.o)
+                0x00005874                _cleanup_r
  .text.std.isra.0
-                0x0000587c       0x48 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-findfp.o)
+                0x00005880       0x48 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-findfp.o)
  .text.__sfmoreglue
-                0x000058c4       0x2c c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-findfp.o)
-                0x000058c4                __sfmoreglue
- .text.__sinit  0x000058f0       0x60 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-findfp.o)
-                0x000058f0                __sinit
- .text.__sfp    0x00005950       0x78 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-findfp.o)
-                0x00005950                __sfp
+                0x000058c8       0x2c c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-findfp.o)
+                0x000058c8                __sfmoreglue
+ .text.__sinit  0x000058f4       0x60 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-findfp.o)
+                0x000058f4                __sinit
+ .text.__sfp    0x00005954       0x78 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-findfp.o)
+                0x00005954                __sfp
  .text._fwalk_reent
-                0x000059c8       0x3c c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-fwalk.o)
-                0x000059c8                _fwalk_reent
+                0x000059cc       0x3c c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-fwalk.o)
+                0x000059cc                _fwalk_reent
  .text.__swhatbuf_r
-                0x00005a04       0x46 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-makebuf.o)
-                0x00005a04                __swhatbuf_r
- *fill*         0x00005a4a        0x2 
+                0x00005a08       0x46 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-makebuf.o)
+                0x00005a08                __swhatbuf_r
+ *fill*         0x00005a4e        0x2 
  .text.__smakebuf_r
-                0x00005a4c       0x78 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-makebuf.o)
-                0x00005a4c                __smakebuf_r
- .text.malloc   0x00005ac4       0x10 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-malloc.o)
-                0x00005ac4                malloc
- .text.free     0x00005ad4       0x10 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-malloc.o)
-                0x00005ad4                free
- *fill*         0x00005ae4        0xc 
+                0x00005a50       0x78 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-makebuf.o)
+                0x00005a50                __smakebuf_r
+ .text.malloc   0x00005ac8       0x10 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-malloc.o)
+                0x00005ac8                malloc
+ .text.free     0x00005ad8       0x10 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-malloc.o)
+                0x00005ad8                free
+ *fill*         0x00005ae8        0x8 
  .text          0x00005af0       0xa0 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-memchr.o)
                 0x00005af0                memchr
  .text.memcpy   0x00005b90       0x16 c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7e-m/softfp\libg_nano.a(lib_a-memcpy-stub.o)
@@ -8781,27 +8781,27 @@ LOAD c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm
                 0x0003eda8        0xc flash-esp8266\bufferedSerial\BufferedSerial.o
  .ARM.extab.text._ZN4mbed10SerialBase6attachI14BufferedSerialEEvPT_MS3_FvvENS0_7IrqTypeE
                 0x0003edb4        0xc flash-esp8266\bufferedSerial\BufferedSerial.o
- .ARM.extab.text._ZN8MyBufferIcE9availableEv
+ .ARM.extab.text._ZN8MyBufferIhE9availableEv
                 0x0003edc0        0x0 flash-esp8266\bufferedSerial\BufferedSerial.o
- .ARM.extab.text._ZN8MyBufferIcEcviEv
+ .ARM.extab.text._ZN8MyBufferIhEcviEv
                 0x0003edc0        0x0 flash-esp8266\bufferedSerial\BufferedSerial.o
- .ARM.extab.text._ZN8MyBufferIcEaSEc
+ .ARM.extab.text._ZN8MyBufferIhEaSEh
                 0x0003edc0        0x0 flash-esp8266\bufferedSerial\BufferedSerial.o
- .ARM.extab.text._ZN8MyBufferIcE3getEv
+ .ARM.extab.text._ZN8MyBufferIhE3getEv
                 0x0003edc0        0x0 flash-esp8266\bufferedSerial\BufferedSerial.o
  .ARM.extab.text._ZN4mbed8CallbackIFvvEEC2I14BufferedSerialEEPT_MS5_FvvE
                 0x0003edc0        0x0 flash-esp8266\bufferedSerial\BufferedSerial.o
- .ARM.extab.text._ZN8MyBufferIcE3putEc
+ .ARM.extab.text._ZN8MyBufferIhE3putEh
                 0x0003edc0        0x0 flash-esp8266\bufferedSerial\BufferedSerial.o
  .ARM.extab.text._ZN4mbed8CallbackIFvvEE6attachI14BufferedSerialEEvPT_MS5_FvvE
                 0x0003edc0        0x0 flash-esp8266\bufferedSerial\BufferedSerial.o
  .ARM.extab.text._ZN4mbed8CallbackIFvvEE12_methodthunkI14BufferedSerialEEvPvS5_
                 0x0003edc0        0xc flash-esp8266\bufferedSerial\BufferedSerial.o
- .ARM.extab.text._ZN8MyBufferIcEC2Em
+ .ARM.extab.text._ZN8MyBufferIhEC2Em
                 0x0003edcc        0xc flash-esp8266\bufferedSerial\buffer\MyBuffer.o
- .ARM.extab.text._ZN8MyBufferIcED2Ev
+ .ARM.extab.text._ZN8MyBufferIhED2Ev
                 0x0003edd8        0x0 flash-esp8266\bufferedSerial\buffer\MyBuffer.o
- .ARM.extab.text._ZN8MyBufferIcE5clearEv
+ .ARM.extab.text._ZN8MyBufferIhE5clearEv
                 0x0003edd8        0x0 flash-esp8266\bufferedSerial\buffer\MyBuffer.o
  .ARM.extab.text._ZN4mbed9DigitalIncviEv
                 0x0003edd8        0xc main.o
@@ -8990,21 +8990,21 @@ LOAD c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm
                 0x0003f09c        0x8 flash-esp8266\bufferedSerial\BufferedSerial.o
  .ARM.exidx.text._ZN4mbed10SerialBase6attachI14BufferedSerialEEvPT_MS3_FvvENS0_7IrqTypeE
                 0x0003f0a4        0x8 flash-esp8266\bufferedSerial\BufferedSerial.o
- .ARM.exidx.text._ZN8MyBufferIcE9availableEv
+ .ARM.exidx.text._ZN8MyBufferIhE9availableEv
                 0x0003f0ac        0x8 flash-esp8266\bufferedSerial\BufferedSerial.o
- .ARM.exidx.text._ZN8MyBufferIcEcviEv
+ .ARM.exidx.text._ZN8MyBufferIhEcviEv
                 0x0003f0b4        0x0 flash-esp8266\bufferedSerial\BufferedSerial.o
                                   0x8 (size before relaxing)
- .ARM.exidx.text._ZN8MyBufferIcEaSEc
+ .ARM.exidx.text._ZN8MyBufferIhEaSEh
                 0x0003f0b4        0x0 flash-esp8266\bufferedSerial\BufferedSerial.o
                                   0x8 (size before relaxing)
- .ARM.exidx.text._ZN8MyBufferIcE3getEv
+ .ARM.exidx.text._ZN8MyBufferIhE3getEv
                 0x0003f0b4        0x0 flash-esp8266\bufferedSerial\BufferedSerial.o
                                   0x8 (size before relaxing)
  .ARM.exidx.text._ZN4mbed8CallbackIFvvEEC2I14BufferedSerialEEPT_MS5_FvvE
                 0x0003f0b4        0x0 flash-esp8266\bufferedSerial\BufferedSerial.o
                                   0x8 (size before relaxing)
- .ARM.exidx.text._ZN8MyBufferIcE3putEc
+ .ARM.exidx.text._ZN8MyBufferIhE3putEh
                 0x0003f0b4        0x0 flash-esp8266\bufferedSerial\BufferedSerial.o
                                   0x8 (size before relaxing)
  .ARM.exidx.text._ZN4mbed8CallbackIFvvEE6attachI14BufferedSerialEEvPT_MS5_FvvE
@@ -9012,11 +9012,11 @@ LOAD c:/program files (x86)/gnu tools arm embedded/5.4 2016q2/bin/../lib/gcc/arm
                                   0x8 (size before relaxing)
  .ARM.exidx.text._ZN4mbed8CallbackIFvvEE12_methodthunkI14BufferedSerialEEvPvS5_
                 0x0003f0b4        0x8 flash-esp8266\bufferedSerial\BufferedSerial.o
- .ARM.exidx.text._ZN8MyBufferIcEC2Em
+ .ARM.exidx.text._ZN8MyBufferIhEC2Em
                 0x0003f0bc        0x8 flash-esp8266\bufferedSerial\buffer\MyBuffer.o
- .ARM.exidx.text._ZN8MyBufferIcED2Ev
+ .ARM.exidx.text._ZN8MyBufferIhED2Ev
                 0x0003f0c4        0x8 flash-esp8266\bufferedSerial\buffer\MyBuffer.o
- .ARM.exidx.text._ZN8MyBufferIcE5clearEv
+ .ARM.exidx.text._ZN8MyBufferIhE5clearEv
                 0x0003f0cc        0x0 flash-esp8266\bufferedSerial\buffer\MyBuffer.o
                                   0x8 (size before relaxing)
  .ARM.exidx.text._ZN4mbed9DigitalIncviEv
@@ -9633,9 +9633,9 @@ OUTPUT(mbedTivaC.elf elf32-littlearm)
                                0x9e0e (size before relaxing)
  .debug_str     0x000146d0       0x2a common\wait_api.o
                                0x9d15 (size before relaxing)
- .debug_str     0x000146fa      0xf6f flash-esp8266\bufferedSerial\BufferedSerial.o
-                              0x1341b (size before relaxing)
- .debug_str     0x00015669      0xb5e flash-esp8266\bufferedSerial\buffer\MyBuffer.o
+ .debug_str     0x000146fa      0xf78 flash-esp8266\bufferedSerial\BufferedSerial.o
+                              0x13424 (size before relaxing)
+ .debug_str     0x00015672      0xb55 flash-esp8266\bufferedSerial\buffer\MyBuffer.o
                                0x6e3a (size before relaxing)
  .debug_str     0x000161c7      0x766 main.o
                               0x1391d (size before relaxing)

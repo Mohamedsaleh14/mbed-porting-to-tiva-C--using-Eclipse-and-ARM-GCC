@@ -58,7 +58,7 @@ int BufferedSerial::getc(void)
 
 int BufferedSerial::putc(int c)
 {
-    _txbuf = (char)c;
+    _txbuf = (unsigned char)c;
     BufferedSerial::prime();
 
     return c;
