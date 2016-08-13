@@ -22,6 +22,9 @@
 extern "C" {
 #endif
 
+#define STDIO_UART_TX	U0Tx
+#define STDIO_UART_RX	U0Rx
+
 typedef enum {
     PIN_INPUT,
     PIN_OUTPUT
@@ -76,6 +79,30 @@ typedef enum {
 	PF_2,
 	PF_3,
 	PF_4,
+
+	U0Rx = PA_0,
+	U0Tx = PA_1,
+
+	U1Rx = PB_0,
+	U1Tx = PB_1,
+
+	U2Rx = PD_6,
+	U2Tx = PD_7,
+
+	U3Rx = PC_6,
+	U3Tx = PC_7,
+
+	U4Rx = PC_4,
+	U4Tx = PC_5,
+
+	U5Rx = PE_4,
+	U5Tx = PE_5,
+
+	U6Rx = PD_4,
+	U6Tx = PD_5,
+
+	U7Rx = PE_0,
+	U7Tx = PE_1,
 
     // Not connected
     NC = (int)0xFFFFFFFF,

@@ -2,7 +2,7 @@
 #include "objects.h"
 #include "gpio_api.h"
 
-PortName getPortNameForPin(PinName pin);
+static PortName getPortNameForPin(PinName pin);
 uint8_t getPinValue(PinName pin);
 
 void gpio_init(gpio_t *obj, PinName pin)
@@ -307,7 +307,7 @@ int gpio_read(gpio_t *obj)
 }
 
 /**Local Implementation**/
-PortName getPortNameForPin(PinName pin)
+static PortName getPortNameForPin(PinName pin)
 {
 	PortName return_name;
 	if((pin == PA_0)|(pin == PA_1)|

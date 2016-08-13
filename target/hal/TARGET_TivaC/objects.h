@@ -23,14 +23,29 @@
 extern "C" {
 #endif
 
+#define TRUE	1
+#define FALSE	0
+
 typedef enum {
     portA,
     portB,
     portC,
 	portD,
 	portE,
-	portF
+	portF,
+	PORT_NC
 } PortName;
+
+typedef enum {
+	UART_0,
+	UART_1,
+	UART_2,
+	UART_3,
+	UART_4,
+	UART_5,
+	UART_6,
+	UART_7
+}UART_T;
 
 typedef struct {
     PinName  pin;
@@ -38,6 +53,12 @@ typedef struct {
     PinValue pin_val;
 } gpio_t;
 
+struct serial_s {
+	PortName port;
+	UART_T uart;
+	UART0_Type *puart;
+	uint8_t index;
+};
 
 #ifdef __cplusplus
 }
