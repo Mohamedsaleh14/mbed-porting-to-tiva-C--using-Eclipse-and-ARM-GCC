@@ -1,6 +1,7 @@
 #include "serial_api.h"
 #include "cmsis_nvic.h"
 #include <string.h>
+#include "critical.h"
 
 #define UART_NUM    8
 
@@ -8,6 +9,7 @@
 static uart_irq_handler irq_handler;
 
 int stdio_uart_inited = 0;
+static uint32_t debug=0;
 serial_t stdio_uart;
 
 struct serial_global_data_s {
@@ -44,7 +46,7 @@ void serial_init(serial_t *obj, PinName tx, PinName rx)
 	uart_port = getUartParam(obj,tx,rx);
 	obj->port = uart_port;
 	MBED_ASSERT(obj->port != (PortName)PORT_NC);
-
+	debug = UART5->MIS;
 	switch(uart_port)
 	{
 	case (portA):
@@ -147,7 +149,7 @@ void serial_irq_set(serial_t *obj, SerialIrq irq, uint32_t enable)
 			break;
 	case (UART_5):
 		irq_n=UART5_IRQn;
-	vector = (uint32_t)&UART5_Irq;
+	vector = (uint32_t)UART5_Irq;
 			break;
 	case (UART_6):
 		irq_n=UART6_IRQn;
@@ -161,7 +163,8 @@ void serial_irq_set(serial_t *obj, SerialIrq irq, uint32_t enable)
 
 	if (enable == TRUE)
 	{
-		obj->puart->IM |= (1<<4);
+		debug = UART5->MIS;
+		UART5->IM |= (1<<4);
 		NVIC_SetVector(irq_n, (uint32_t)vector);
 		NVIC_EnableIRQ(irq_n);
 	}
@@ -326,7 +329,10 @@ static inline void uart_irq(uint32_t iir, uint32_t index, UART0_Type *puart)
 
     if(irq_type == RxIrq)
     {
-    	puart->ICR = (uint32_t)0x30;
+    	debug = UART5->RIS;
+    	debug = UART5->MIS;
+    	puart->ICR |= (uint32_t)0xFFF;
+    	NVIC_ClearPendingIRQ(UART5_IRQn);
     }
 
     if(uart_data[index].serial_irq_id != 0)
@@ -363,7 +369,7 @@ static void UART4_Irq(void)
 	uart_irq(((UART4->RIS)&0x30), 4, UART4);
 }
 
-static void UART5_Irq(void)
+void UART5_Irq(void)
 {
 	uart_irq(((UART5->RIS)&0x30), 5, UART5);
 }
@@ -466,6 +472,7 @@ static void UART5_Init(void)
 	UART5->FBRD  = 26;
 	UART5->LCRH  = 0x70;
 	UART5->CC    = 0x00;
+	UART5->ICR	 = 0xFF;
 	UART5->CTL   = (1<<0)|(1<<8)|(1<<9);
 }
 

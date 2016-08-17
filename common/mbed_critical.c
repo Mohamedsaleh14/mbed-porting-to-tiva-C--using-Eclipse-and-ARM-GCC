@@ -21,8 +21,7 @@
 #include "mbed_assert.h"
 
 #define EXCLUSIVE_ACCESS (!defined (__CORTEX_M0) && !defined (__CORTEX_M0PLUS))
-
-static volatile uint32_t interrupt_enable_counter = 0;
+static uint32_t interrupt_enable_counter = 0;
 static volatile bool critical_interrupts_disabled = false;
 
 bool core_util_are_interrupts_enabled(void)
@@ -47,7 +46,7 @@ void core_util_critical_section_enter(void)
     /* If the interrupt_enable_counter overflows or we are in a nested critical section and interrupts
        are enabled, then something has gone badly wrong thus assert an error.
     */
-    //MBED_ASSERT(interrupt_enable_counter < UINT32_MAX);
+    MBED_ASSERT(interrupt_enable_counter < UINT32_MAX); 
 // FIXME
 #ifndef   FEATURE_UVISOR
     if (interrupt_enable_counter > 0) {
@@ -56,7 +55,7 @@ void core_util_critical_section_enter(void)
 #else
 #warning "core_util_critical_section_enter needs fixing to work from unprivileged code"
 #endif /* FEATURE_UVISOR */
-    interrupt_enable_counter ++;
+    interrupt_enable_counter++;
 }
 
 void core_util_critical_section_exit(void)
@@ -73,7 +72,7 @@ void core_util_critical_section_exit(void)
 #warning "core_util_critical_section_exit needs fixing to work from unprivileged code"
 #endif /* FEATURE_UVISOR */
 
-        interrupt_enable_counter --;
+        interrupt_enable_counter--;
 
         /* Only re-enable interrupts if we are exiting the last of the nested critical sections and
            interrupts were enabled on entry to the first critical section.

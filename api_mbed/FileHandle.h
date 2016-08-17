@@ -19,7 +19,6 @@
 typedef int FILEHANDLE;
 
 #include <stdio.h>
-#include <unistd.h>
 
 #if defined(__ARMCC_VERSION) || defined(__ICCARM__)
 typedef int ssize_t;
