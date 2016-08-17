@@ -149,7 +149,7 @@ void serial_irq_set(serial_t *obj, SerialIrq irq, uint32_t enable)
 			break;
 	case (UART_5):
 		irq_n=UART5_IRQn;
-	vector = (uint32_t)UART5_Irq;
+	vector = (uint32_t)&UART5_Irq;
 			break;
 	case (UART_6):
 		irq_n=UART6_IRQn;
@@ -369,7 +369,7 @@ static void UART4_Irq(void)
 	uart_irq(((UART4->RIS)&0x30), 4, UART4);
 }
 
-void UART5_Irq(void)
+static void UART5_Irq(void)
 {
 	uart_irq(((UART5->RIS)&0x30), 5, UART5);
 }
